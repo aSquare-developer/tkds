@@ -1,5 +1,12 @@
 @extends('layout')
 
+@section('title', config('app.name') . ' ' . '')
+
 @section('content')
-  <h1>Hello World! This is Index page!</h1>
+
+@include('pages.sections.header')
+@include('pages.sections.dancestyle')
+@include('pages.sections.timetable')
+@include('pages.sections.contact')
+
 @endsection

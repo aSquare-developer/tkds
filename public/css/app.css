@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.card {
+  color: black;
+  margin-right: 2rem;
+  border-radius: 17px;
+}
+
+.card-img-top {
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+.card-body {
+  height: 125px;
+  width: auto;
+}
+
+p.card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+.glider-carousel-link:hover {
+  text-decoration: none;
+}
+
+.modal-content {
+  color: black;
+}

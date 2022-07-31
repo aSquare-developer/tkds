@@ -12,6 +12,8 @@ body {
 .card-img-top {
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
 }
 
 .card-body {

@@ -9,4 +9,9 @@ class MainController extends Controller
     public function index() {
       return view('pages.index');
     }
+
+    public function registerForLessons(Request $req) {
+      dd($req);
+      return "asd";
+    }
 }

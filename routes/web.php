@@ -15,3 +15,5 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', [MainController::class, 'index']);
+
+Route::post('/register-for-lessons', [MainController::class, 'registerForLessons']);

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\RegisterForLessonsEmail;
+use App\Mail\NewStudentNotificationEmail;
 
 use App\Models\RegisterNewStudent;
 use Illuminate\Http\Request;
@@ -40,6 +41,17 @@ class MainController extends Controller
 
       // Send email with data
       Mail::to("info@asquare.ee")->send(new RegisterForLessonsEmail($mailData));
+
+      // Create link to file
+      $file = public_path('lepingut/tkds-leping.docx');
+
+      // Create a data for notification email
+      $notificationMailData = [
+        'file' => $file
+      ];
+
+      // Send notification email to new student
+      Mail::to($req->email)->send(new NewStudentNotificationEmail($notificationMailData));
 
       // Redirect back to home page with success message
       return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');

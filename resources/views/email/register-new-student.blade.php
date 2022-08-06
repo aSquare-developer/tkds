@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Test Mail</title>
+    <title>Registreerimine uue õpilase</title>
   </head>
   <body>
     <h1>Uus õpilane soovib registreerida trennidesse.</h1>

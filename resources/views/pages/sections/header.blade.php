@@ -40,7 +40,7 @@
         <form class="" action="/register-for-lessons" method="post" id="registerForm">@csrf
 
           <div class="md-form mb-2">
-            <input type="text" class="form-control" name="firstlastname" placeholder="Ees- ja perekonnanimi" required>
+            <input type="text" class="form-control" name="fullname" placeholder="Ees- ja perekonnanimi" required>
           </div>
           <div class="md-form mb-2">
             <input type="text" class="form-control" name="aeg" placeholder="Vanus" required>

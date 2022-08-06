@@ -1,7 +1,5 @@
 @if (\Session::has('success'))
-    <div class="alert alert-success">
-        <ul>
-            <li>{!! \Session::get('success') !!}</li>
-        </ul>
-    </div>
+<div class="alert alert-success" role="alert">
+  {{ session()->get('success') }}
+</div>
 @endif

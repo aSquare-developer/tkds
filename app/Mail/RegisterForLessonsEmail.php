@@ -35,6 +35,6 @@ class RegisterForLessonsEmail extends Mailable
       return $this
                 ->replyTo($fromAddres, $fullname)
                 ->subject('Uue õpilase registreerimine')
-                ->view('email.test');
+                ->view('email.register-new-student');
     }
 }

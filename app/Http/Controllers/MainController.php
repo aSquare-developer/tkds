@@ -29,7 +29,7 @@ class MainController extends Controller
 
       // Create a data for email
       $mailData = [
-        "fullname" => $req->firstlastname,
+        "fullname" => $req->fullname,
         "aeg" => $req->aeg,
         "email" => $req->email,
         "phone" => $req->phone,

@@ -37,7 +37,7 @@
 
         <p>Pärast vormi täitmist teile saadetakse registreerimise kinnitus. Palun võtke meiega ühendust e-posti teel, kui olete ankeedi esitanud, kuid ei saanud kinnitust.</p>
 
-        <form class="" action="/register-for-lessons" method="post">@csrf
+        <form class="" action="/register-for-lessons" method="post" id="registerForm">@csrf
 
           <div class="md-form mb-2">
             <input type="text" class="form-control" name="firstlastname" placeholder="Ees- ja perekonnanimi" required>

@@ -23,3 +23,5 @@
     },
   });
 </script>
+
+ <script src="{{ URL::asset('/js/registerForm.js') }}"></script>

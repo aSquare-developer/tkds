@@ -27,7 +27,7 @@ class MainController extends Controller
 
     Mail::to("info@asquare.ee")->send(new RegisterForLessonsEmail($mailData));
 
-    return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.'); 
+    return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');
 
     }
 }

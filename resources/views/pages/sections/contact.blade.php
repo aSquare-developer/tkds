@@ -47,10 +47,7 @@
           </li>
         </ul>
       </div>
-
-
     </div>
-    <!-- Grid row -->
 
   </div>
 

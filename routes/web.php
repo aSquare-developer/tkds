@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ContactUsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,5 @@ use App\Http\Controllers\MainController;
 Route::get('/', [MainController::class, 'index']);
 
 Route::post('/register-for-lessons', [MainController::class, 'registerForLessons']);
+
+Route::post('/contact-us', [ContactUsController::class, 'sendMessage']);

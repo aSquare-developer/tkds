@@ -32,7 +32,9 @@ class NewStudentNotificationEmail extends Mailable
 
       $file = $this->notificationMailData['file'];
 
-      $this->subject('TKDS Registreerimise kinnitus')
+      $this
+            ->from('info@asquare.ee', 'TKDS')
+            ->subject('TKDS Registreerimise kinnitus')
             ->replyTo('info@asquare.ee', 'TKDS')
             ->view('email.new-student-notification')
             ->attach($file);

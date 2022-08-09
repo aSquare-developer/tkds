@@ -33,6 +33,7 @@ class RegisterForLessonsEmail extends Mailable
       $fromAddres = $this->mailData['email'];
 
       return $this
+                ->from('info@asquare.ee', 'TKDS')
                 ->replyTo($fromAddres, $fullname)
                 ->subject('Uue õpilase registreerimine')
                 ->view('email.register-new-student');

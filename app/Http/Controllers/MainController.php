@@ -49,6 +49,7 @@ class MainController extends Controller
       $notificationMailData = [
         'file' => $file
       ];
+      
 
       // Send notification email to new student
       Mail::to($req->email)->send(new NewStudentNotificationEmail($notificationMailData));

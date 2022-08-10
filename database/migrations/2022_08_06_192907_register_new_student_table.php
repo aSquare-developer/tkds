@@ -17,11 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('fullname');
             $table->string('aeg');
-            $table->string('email');
-            $table->string('phone');
-            $table->string('experience')->nullable();
             $table->string('dancestyles');
-            $table->string('howfindus');
+            $table->string('email');
             $table->timestamps();
         });
     }

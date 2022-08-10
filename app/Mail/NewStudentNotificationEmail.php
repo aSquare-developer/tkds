@@ -18,9 +18,9 @@ class NewStudentNotificationEmail extends Mailable
      *
      * @return void
      */
-    public function __construct($notificationMailData)
+    public function __construct()
     {
-        $this->notificationMailData = $notificationMailData;
+      
     }
 
     /**
@@ -30,14 +30,11 @@ class NewStudentNotificationEmail extends Mailable
      */
     public function build() {
 
-      $file = $this->notificationMailData['file'];
-
       $this
             ->from('info@asquare.ee', 'TKDS')
             ->subject('TKDS Registreerimise kinnitus')
             ->replyTo('info@asquare.ee', 'TKDS')
-            ->view('email.new-student-notification')
-            ->attach($file);
+            ->view('email.new-student-notification');
 
       return $this;
     }

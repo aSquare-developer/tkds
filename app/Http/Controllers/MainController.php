@@ -21,38 +21,23 @@ class MainController extends Controller
       RegisterNewStudent::create([
         'fullname' => $req->fullname,
         'aeg' => $req->aeg,
-        'email' => $req->email,
-        'phone' => $req->phone,
-        'experience' => $req->experience,
-        'dancestyles' => implode(", ", $req->dancestyle),
-        'howfindus' => implode(", ", $req->howfindus)
+        'dancestyles' => $req->dancestyle,
+        'email' => $req->email
       ]);
 
       // Create a data for email
       $mailData = [
         "fullname" => $req->fullname,
         "aeg" => $req->aeg,
-        "email" => $req->email,
-        "phone" => $req->phone,
-        "experience" => $req->experience,
-        "dancestyle" => implode(", ", $req->dancestyle),
-        "howfindus" => implode(", ", $req->howfindus)
+        "dancestyle" => $req->dancestyle,
+        "email" => $req->email
       ];
 
       // Send email with data
       Mail::to("info@asquare.ee")->send(new RegisterForLessonsEmail($mailData));
 
-      // Create link to file
-      $file = public_path('lepingut/tkds-leping.docx');
-
-      // Create a data for notification email
-      $notificationMailData = [
-        'file' => $file
-      ];
-      
-
       // Send notification email to new student
-      Mail::to($req->email)->send(new NewStudentNotificationEmail($notificationMailData));
+      Mail::to($req->email)->send(new NewStudentNotificationEmail());
 
       // Redirect back to home page with success message
       return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');

@@ -15,7 +15,7 @@
         <h1 class="display-3">TKDS Dance Studio</h1>
         <p class="lead mb-4">Tantsukool kaasaegsete tantsustiilidega, mis sobib inimestele igas vanuserühmas ja erineva tasemega. </p>
         <!-- <a href="#" class="btn btn-outline-success btn-lg">VÕTA PROVITRENNI </a> -->
-        <a href="#" class="btn btn-outline-success btn-lg" data-toggle="modal" data-target=".register-modal-lg">REGISTREERI TUNDIDESSE</a>
+        <a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target=".register-modal-lg">REGISTREERI TUNDIDESSE</a>
       </div>
     </div>
   </div>

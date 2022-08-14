@@ -6,13 +6,16 @@ use App\Mail\RegisterForLessonsEmail;
 use App\Mail\NewStudentNotificationEmail;
 
 use App\Models\RegisterNewStudent;
+use App\Models\Dancestyle;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class MainController extends Controller
 {
     public function index() {
-      return view('pages.index');
+      $dancestyles = Dancestyle::all();
+      return view('pages.index', compact('dancestyles'));
     }
 
     public function registerForLessons(Request $req) {

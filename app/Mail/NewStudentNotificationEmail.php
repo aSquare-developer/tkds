@@ -20,7 +20,7 @@ class NewStudentNotificationEmail extends Mailable
      */
     public function __construct()
     {
-      
+
     }
 
     /**
@@ -31,9 +31,9 @@ class NewStudentNotificationEmail extends Mailable
     public function build() {
 
       $this
-            ->from('info@asquare.ee', 'TKDS')
+            ->from('info@tkds.ee', 'TKDS')
             ->subject('TKDS Registreerimise kinnitus')
-            ->replyTo('info@asquare.ee', 'TKDS')
+            ->replyTo('info@tkds.ee', 'TKDS')
             ->view('email.new-student-notification');
 
       return $this;

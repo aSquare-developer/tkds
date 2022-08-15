@@ -25,7 +25,7 @@ class ContactUsController extends Controller
       ];
 
       // Send email with data
-      Mail::to("info@asquare.ee")->send(new ContactUsMail($ContactUsMailData));
+      Mail::to("info@tkds.ee")->send(new ContactUsMail($ContactUsMailData));
 
       return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');
     }

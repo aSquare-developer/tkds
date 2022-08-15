@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\HallBookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,9 @@ use App\Http\Controllers\ContactUsController;
 |
 */
 
-Route::get('/', [MainController::class, 'index']);
+Route::get('/', [MainController::class, 'index'])->name('home');
+
+Route::get('/hall-booking', [HallBookingController::class, 'index'])->name('hall-booking');
 
 Route::post('/register-for-lessons', [MainController::class, 'registerForLessons']);
 

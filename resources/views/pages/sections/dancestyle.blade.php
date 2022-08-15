@@ -3,7 +3,8 @@
   <div class="container">
     <div class="intro">
         <h2 class="text-center">TKDS Dancestyles</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="text-center">Stuudio on avatud aastast 2012 ning meil õnnestus juba publiku armastust ja õpilaste usaldust saavutada. Regulaarselt leiavad meil aset masterclassid, osaleme erinevatel üritustel ja käime võistlustel. Jõuame ka finaali ja seal esimeste kohtadeni. Meie õpilaste edusammudega saate te tutvuda meie hooaja kontserditel, mis korraldatakse talvel ja suvel.</p>
+        <p class="text-center">See on kool, kus inimesed, kes esimest korda puutuvad kokku kaasaegse tantsuga muutuvad kogenud tantsijateks, parandavad oma füüsilise võimekuse ning omandavad vajalikud oskused kaasaegsetes stiilides. Meid kõiki ühendab ühine eesmärk ja ääretu armastus tantsu vastu. See on koht, kus tantsijad saavad lähedaseks, leiavad sõpru ja elavad koos üle raskeid tööpäevi, alandavad stressi ning saavad tõelise naudingu.Soovime kõigile tantsu :)</p>
     </div>
   </div>
 

@@ -2,7 +2,7 @@
 <section id="contact" class="pt-5">
   <div class="container">
 
-    <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact us</h2>
+    <h2 class="h1-responsive font-weight-bold text-left mb-5">Võta meiega ühendust</h2>
 
     <div class="row">
       <div class="col-md-9 mb-md-0 mb-5">
@@ -23,7 +23,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="md-form mb-3">
-                <textarea id="contact-message" class="form-control md-textarea" name="message" rows="3" placeholder="Your message" required></textarea>
+                <textarea id="contact-message" class="form-control md-textarea" name="message" rows="3" placeholder="Sinu sõnum" required></textarea>
               </div>
             </div>
           </div>

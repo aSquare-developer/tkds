@@ -37,7 +37,7 @@ class MainController extends Controller
       ];
 
       // Send email with data
-      Mail::to("info@asquare.ee")->send(new RegisterForLessonsEmail($mailData));
+      Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
 
       // Send notification email to new student
       Mail::to($req->email)->send(new NewStudentNotificationEmail());

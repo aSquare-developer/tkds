@@ -9,13 +9,16 @@
           <a class="nav-link" href="{{ route('home') }}">Koduleht</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/#dancestyle">Tansustiilid</a>
+          <a class="nav-link" href="/#dancestyle">Tantsustiilid</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/#timetable">Ajatabel</a>
         </li>
-        <li class="nav-item {{ (request()->segment(1) == 'hall-booking') ? 'active' : '' }}">
-          <a class="nav-link" href="{{ route('hall-booking') }}">Broneering</a>
+        <li class="nav-item {{ (request()->segment(1) == 'rent') ? 'active' : '' }}">
+          <a class="nav-link" href="{{ route('hall-booking') }}">Rent</a>
+        </li>
+        <li class="nav-item {{ (request()->segment(1) == 'hinnakiri') ? 'active' : '' }}">
+          <a class="nav-link" href="{{ route('price-list') }}">Hinnakiri</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/#contact">Kontakt</a>

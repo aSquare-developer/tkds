@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\HallBookingController;
+use App\Http\Controllers\PriceListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,8 @@ use App\Http\Controllers\HallBookingController;
 
 Route::get('/', [MainController::class, 'index'])->name('home');
 
-Route::get('/hall-booking', [HallBookingController::class, 'index'])->name('hall-booking');
+Route::get('/rent', [HallBookingController::class, 'index'])->name('hall-booking');
+Route::get('/hinnakiri', [PriceListController::class, 'index'])->name('price-list');
 
 Route::post('/register-for-lessons', [MainController::class, 'registerForLessons']);
 

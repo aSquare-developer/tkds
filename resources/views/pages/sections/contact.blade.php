@@ -30,7 +30,7 @@
                   class="form-control md-textarea"
                   name="message"
                   rows="3"
-                  placeholder="{{ (request()->segment(1) == 'rent') ? 'Täpsusta mis saali soovite, millal, kui palju inimesi ja mis kell' : 'Sinu sõnum' }}"
+                  placeholder="{{ (request()->segment(1) == 'rent') ? 'Palun täpsustage mis saali soovite, mis päeval, ajavahemikul ja kui palju inimesi?' : 'Sinu sõnum' }}"
                   required></textarea>
               </div>
             </div>

@@ -87,8 +87,6 @@
     </div>
   </div>
 
-  <p>Kui laps on haigestunud covidi tõttu, siis me arvet ümber ei arvuta. Õppetunde saab täiendada teiste stiilidega.</p>
-
 </div>
 
 @endsection

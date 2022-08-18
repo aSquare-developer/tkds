@@ -27,63 +27,72 @@
               <tbody>
                   <tr>
                       <td>
-                          <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Contemp</span>
+                          <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Contemporary</span>
                           <div class="margin-10px-top font-size14">17:00-19:00</div>
                           <div class="font-size13 text-light-gray">ADV</div>
                       </td>
                       <td>
-                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">DH Open</span>
+                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dancehall</span>
                           <div class="margin-10px-top font-size14">18:00-19:30</div>
+                          <div class="font-size13 text-light-gray">Open</div>
                       </td>
                       <td>
-                          <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">DH CHOREO</span>
+                          <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dancehall</span>
                           <div class="margin-10px-top font-size14">17:30-19:00</div>
+                          <div class="font-size13 text-light-gray">Basics</div>
                       </td>
                       <td>
-                          <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">CONTEMP OPEN</span>
+                          <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Contemporary</span>
                           <div class="margin-10px-top font-size14">17:00-19:00</div>
+                          <div class="font-size13 text-light-gray">Open</div>
                       </td>
                       <td>
-                          <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">DH OPEN</span>
-                          <div class="margin-10px-top font-size14">18:00-19:30</div>
+                          <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dancehall</span>
+                          <div class="margin-10px-top font-size14">16:30-18:00</div>
+                          <div class="font-size13 text-light-gray">Basics</div>
                       </td>
                       <td>
-                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">STRETCHING</span>
+                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Stretching</span>
                           <div class="margin-10px-top font-size14">13:00-14:30</div>
                       </td>
                       <td>
-                          <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Tembir</span>
-                          <div class="margin-10px-top font-size14">11:00-12:30</div>
+                          <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
+                          <div class="margin-10px-top font-size14">15:30-17:00</div>
                       </td>
                   </tr>
 
                   <tr>
                     <td>
-                        <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Street</span>
+                        <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Tänavatants</span>
                         <div class="margin-10px-top font-size14">19:00-20:30</div>
                     </td>
                     <td>
-                        <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">DH CLOSED</span>
+                        <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dancehall</span>
                         <div class="margin-10px-top font-size14">19:30-21:00</div>
+                        <div class="font-size13 text-light-gray">Closed</div>
                     </td>
                     <td>
                         <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">VOGUE</span>
                         <div class="margin-10px-top font-size14">19:00-20:30</div>
                     </td>
                     <td>
-                        <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">A-M TECHNICAL</span>
+                        <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Contemporary</span>
                         <div class="margin-10px-top font-size14">19:00-20:30</div>
+                        <div class="font-size13 text-light-gray">TECHNICAL</div>
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+                      <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dancehall</span>
+                      <div class="margin-10px-top font-size14">18:00-19:30</div>
+                      <div class="font-size13 text-light-gray">Open</div>
                     </td>
                     <td>
-                        <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">BREAKING BEG</span>
-                        <div class="margin-10px-top font-size14">14:30-15:30</div>
+                        <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Heels</span>
+                        <div class="margin-10px-top font-size14">18:00-19:30</div>
                     </td>
                     <td>
-                        <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Tembir</span>
-                        <div class="margin-10px-top font-size14">12:45-13:45</div>
+                      <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Hip-Hop</span>
+                      <div class="margin-10px-top font-size14">17:00-18:30</div>
+                      <div class="font-size13 text-light-gray">Freestyle</div>
                     </td>
                   </tr>
 
@@ -93,77 +102,78 @@
                         <div class="margin-10px-top font-size14">20:30-22:00</div>
                     </td>
                       <td>
-                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">DH WOMAN</span>
-                          <div class="margin-10px-top font-size14">21:00-22:00</div>
+                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
+                          <div class="margin-10px-top font-size14">21:00-22:30</div>
                       </td>
                       <td>
                           <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">House</span>
                           <div class="margin-10px-top font-size14">20:30-22:00</div>
                       </td>
                       <td>
-                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">DH CLOSED</span>
+                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dancehall</span>
                           <div class="margin-10px-top font-size14">20:30-22:00</div>
+                          <div class="font-size13 text-light-gray">Closed</div>
                       </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+                        <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Vogue</span>
+                        <div class="margin-10px-top font-size14">19:30-21:00</div>
                       </td>
                       <td>
                           <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Heels</span>
                           <div class="margin-10px-top font-size14">18:00-19:30</div>
                       </td>
                       <td>
-                          <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Tembir</span>
-                          <div class="margin-10px-top font-size14">14:00-15:30</div>
+                        <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Hip-Hop</span>
+                        <div class="margin-10px-top font-size14">18:30-20:00</div>
+                        <div class="font-size13 text-light-gray">Choreo</div>
                       </td>
                   </tr>
 
                   <tr>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">HIP HOP FREESTYLE</span>
-                          <div class="margin-10px-top font-size14">17:00-18:30</div>
+
                       </td>
                   </tr>
 
                   <tr>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                       </td>
                       <td>
-                          <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">HIP HOP CHOREO</span>
-                          <div class="margin-10px-top font-size14">18:30-20:00</div>
+
                       </td>
                   </tr>
               </tbody>
@@ -188,117 +198,122 @@
               <tbody>
                   <tr>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+                      <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dancehall</span>
+                      <div class="margin-10px-top font-size14">17:00-18:00</div>
+                      <div class="font-size13 text-light-gray">Kids</div>
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+                      <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dancehall</span>
+                      <div class="margin-10px-top font-size14">17:00-18:00</div>
+                      <div class="font-size13 text-light-gray">Kids</div>
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                   </tr>
                   <tr>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+                      <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Break</span>
+                      <div class="margin-10px-top font-size14">21:00-22:30</div>
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
-                    </td>
-                    <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                   </tr>
                   <tr>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
                     </td>
                   </tr>
               </tbody>

@@ -75,7 +75,7 @@
                         <div class="margin-10px-top font-size14">19:00-20:30</div>
                     </td>
                     <td>
-                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
+                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Paus</span>
                     </td>
                     <td>
                         <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">BREAKING BEG</span>

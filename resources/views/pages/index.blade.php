@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', config('app.name') . ' ' . '')
+@section('title', config('app.name') . ' ' . 'Dance Studio')
 
 @section('content')
 

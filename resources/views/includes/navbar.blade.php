@@ -12,7 +12,7 @@
           <a class="nav-link" href="/#dancestyle">Tantsustiilid</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/#timetable">Ajatabel</a>
+          <a class="nav-link" href="/#timetable">Tunniplaan</a>
         </li>
         <li class="nav-item {{ (request()->segment(1) == 'rent') ? 'active' : '' }}">
           <a class="nav-link" href="{{ route('hall-booking') }}">Rent</a>

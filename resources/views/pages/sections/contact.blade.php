@@ -2,7 +2,9 @@
 <section id="contact" class="pt-5">
   <div class="container">
 
-    <h2 class="h1-responsive font-weight-bold text-left mb-5">Võta meiega ühendust</h2>
+    @if (request()->segment(1) == '')
+        <h2 class="h1-responsive font-weight-bold text-left mb-5">Võta meiega ühendust</h2>
+    @endif
 
     <div class="row">
       <div class="col-md-9 mb-md-0 mb-5">
@@ -23,7 +25,13 @@
           <div class="row">
             <div class="col-md-12">
               <div class="md-form mb-3">
-                <textarea id="contact-message" class="form-control md-textarea" name="message" rows="3" placeholder="Sinu sõnum" required></textarea>
+                <textarea
+                  id="contact-message"
+                  class="form-control md-textarea"
+                  name="message"
+                  rows="3"
+                  placeholder="{{ (request()->segment(1) == 'rent') ? 'Täpsusta mis saali soovite, millal, kui palju inimesi ja mis kell' : 'Sinu sõnum' }}"
+                  required></textarea>
               </div>
             </div>
           </div>

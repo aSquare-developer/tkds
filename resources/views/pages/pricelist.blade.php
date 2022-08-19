@@ -56,17 +56,19 @@
     </div>
     <div class="card mb-4 box-shadow">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">10H KAART</h4>
+        <h4 class="my-0 font-weight-normal">&nbsp;</h4>
       </div>
       <div class="card-body">
+        <h4 class="my-0 font-weight-normal">10H KAART</h4>
         <h1 class="card-title pricing-card-title">60€</h1>
       </div>
     </div>
     <div class="card mb-4 box-shadow">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">PERESOODUSTUS</h4>
+        <h4 class="my-0 font-weight-normal">&nbsp;</h4>
       </div>
       <div class="card-body">
+        <h4 class="my-0 font-weight-normal">PERESOODUSTUS</h4>
         <h1 class="card-title pricing-card-title">-10%</h1>
       </div>
     </div>

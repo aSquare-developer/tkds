@@ -54,7 +54,7 @@
         <h2 class="my-0 font-weight-normal">ÜKSIKTUND</h2>
       </div>
     </div>
-    <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".10-hour-modal-lg">
+    <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".ten-hour-modal-lg">
       <div class="card-header">
         <h4 class="my-0 font-weight-normal">&nbsp;</h4>
       </div>
@@ -160,11 +160,11 @@
   </div>
 </div>
 
-<div class="modal fade 10-hour-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade ten-hour-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="10HourModalTitle">10H KAART</h5>
+        <h5 class="modal-title" id="tenHourModalTitle">10H KAART</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

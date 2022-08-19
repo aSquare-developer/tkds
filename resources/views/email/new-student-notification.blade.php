@@ -37,9 +37,7 @@
 
       <a href="https://test.tkds.ee/#dancestyle">Tantsustiilid</a>
       <a href="https://test.tkds.ee/#timetable">Tunniplaan</a>
-      <a href="https://test.tkds.ee/hinnakiri">Hinnakiri</a><br /><br />
-
-      ________________________________________
+      <a href="https://test.tkds.ee/hinnakiri">Hinnakiri</a><br />
     </p>
 
     <p>

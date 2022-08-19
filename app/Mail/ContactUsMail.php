@@ -32,7 +32,11 @@ class ContactUsMail extends Mailable
       $name = $this->contactUsMailData['name'];
       $email = $this->contactUsMailData['email'];
 
-      $this->replyTo($email, $name)->subject('TKDS Contact Us Message')->view('email.contact-us');
+      $this
+      ->from('info@tkds.ee', 'TKDS')
+      ->replyTo($email, $name)
+      ->subject('TKDS Contact Us Message')
+      ->view('email.contact-us');
 
       return $this;
     }

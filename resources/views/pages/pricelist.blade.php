@@ -51,15 +51,15 @@
         <h4 class="my-0 font-weight-normal">&nbsp;</h4>
       </div>
       <div class="card-body">
-        <h1 class="my-0 font-weight-normal">ÜKSIKTUND</h1>
+        <h2 class="my-0 font-weight-normal">ÜKSIKTUND</h2>
       </div>
     </div>
-    <div class="card mb-4 box-shadow">
+    <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".10-hour-modal-lg">
       <div class="card-header">
         <h4 class="my-0 font-weight-normal">&nbsp;</h4>
       </div>
       <div class="card-body">
-        <h4 class="my-0 font-weight-normal">10H KAART</h4>
+        <h3 class="my-0 font-weight-normal">10H KAART</h3>
         <h1 class="card-title pricing-card-title">60€</h1>
       </div>
     </div>
@@ -68,7 +68,7 @@
         <h4 class="my-0 font-weight-normal">&nbsp;</h4>
       </div>
       <div class="card-body">
-        <h4 class="my-0 font-weight-normal">PERESOODUSTUS</h4>
+        <h3 class="my-0 font-weight-normal">PERESOODUSTUS</h3>
         <h1 class="card-title pricing-card-title">-10%</h1>
       </div>
     </div>
@@ -154,6 +154,24 @@
         </ul>
         <p>
           Ühekordse visiidi korral, saate maksta enne trenni sularahas
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade 10-hour-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="10HourModalTitle">10H KAART</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          10H kaart sobib ainult uutele õpilastele ja seda saab kasutada erinevate stiilide võtmisel üks kord.
         </p>
       </div>
     </div>

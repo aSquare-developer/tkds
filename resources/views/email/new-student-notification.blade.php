@@ -18,7 +18,7 @@
 
       <a href="https://test.tkds.ee/#dancestyle">Стили</a>
       <a href="https://test.tkds.ee/#timetable">Расписание</a>
-      <a href="https://test.tkds.ee/hinnakiri">Цены</a>
+      <a href="https://test.tkds.ee/hinnakiri">Цены</a><br /><br />
 
       ______________________________________
     </p>
@@ -37,7 +37,7 @@
 
       <a href="https://test.tkds.ee/#dancestyle">Tantsustiilid</a>
       <a href="https://test.tkds.ee/#timetable">Tunniplaan</a>
-      <a href="https://test.tkds.ee/hinnakiri">Hinnakiri</a>
+      <a href="https://test.tkds.ee/hinnakiri">Hinnakiri</a><br /><br />
 
       ________________________________________
     </p>

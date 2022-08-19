@@ -7,27 +7,37 @@
   <body>
 
     <p>
-      Здравствуйте,<br />
-      Вы заполнили анкету на регистрацию в танцевальную студию TKDS.<br />
-      Для полной регистрации необходимо заполнить и отправить подписанный договор.<br />
-      Документ будет отправлен следующим письмом. (NB! Подписанный документ необходимо выслать ДО начала первого занятия)<br />
-      Пожалуйста убедитесь, что ознакомились с расписанием, ценами и информацией о наставнике у нас на сайте www.tkds.ee<br />
-      Следите за нашими страницами в Facebook/instagram (tkds_studio). Туда будем помещать важную информацию касаемую изменений, мероприятий.<br /><br />
+      Дорогой друг:)<br /><br />
+
+      Мы рады видеть вашу заявку на регистрацию в танцевальную студию TKDS.<br />
+      Для полной регистрации необходимо заполнить и отправить подписанный договор. (NB! Документ необходимо выслать ДО начала первого занятия)<br /><br />
+
+      Следите за нашими страницами в Facebook/instagram (tkds_studio). Туда будем помещать важную информацию касаемую изменений, мероприятий.<br />
 
       Наш адрес: Tatari 64 (2-ой этаж)<br /><br />
+
+      <a href="https://test.tkds.ee/#dancestyle">Стили</a>
+      <a href="https://test.tkds.ee/#timetable">Расписание</a>
+      <a href="https://test.tkds.ee/hinnakiri">Цены</a>
 
       ______________________________________
     </p>
 
     <p>
-      Tere,<br />
-      Olete täitnud TKDS Dance Studio registreerimisvormi.<br />
+      Armas tantsusõber,<br /><br />
+
+      Olete täitnud TKDS Dance Studio registreerimisvormi.<br /><br />
+
       Täielikuks registreerimiseks peate täitma ja saatma allkirjastatud lepingu.<br />
-      Dokument saadetakse järgmise kirjaga. (NB! Вokument peab olema tagasi allkirjastatuna saadetud enne esimest trenni)<br />
-      Palun tutvuge ajakava, hindade ja juhendajatega meie kodulehel www.tkds.ee<br />
-      Jälgige meie uudiseid, trennidega seotuid muudatusi ja tulevasi üritusi meie Facebook ja Instagram lehelt (tkds_studio).<br /><br />
+      (NB! Dokument peab olema tagasi allkirjastatuna saadetud enne esimest trenni)<br /><br />
+
+      Jälgige meie uudiseid, trennidega seotuid muudatusi ja tulevasi üritusi meie Facebook ja Instagram lehelt (tkds_studio).<br />
 
       Meie aadress: Tatari 64 (2 korrus)<br /><br />
+
+      <a href="https://test.tkds.ee/#dancestyle">Tantsustiilid</a>
+      <a href="https://test.tkds.ee/#timetable">Tunniplaan</a>
+      <a href="https://test.tkds.ee/hinnakiri">Hinnakiri</a>
 
       ________________________________________
     </p>

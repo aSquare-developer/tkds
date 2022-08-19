@@ -32,7 +32,7 @@ class NewStudentNotificationEmail extends Mailable
 
       $this
             ->from('info@tkds.ee', 'TKDS')
-            ->subject('')
+            ->subject('Registreerimise kinnitus')
             ->replyTo('info@tkds.ee', 'TKDS')
             ->view('email.new-student-notification');
 

@@ -99,7 +99,7 @@
                   <tr>
                     <td>
                         <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">House</span>
-                        <div class="margin-10px-top font-size14">20:30-22:00</div>
+                        <div class="margin-10px-top font-size14">20:30-21:30</div>
                     </td>
                       <td>
                           <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
@@ -107,7 +107,7 @@
                       </td>
                       <td>
                           <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">House</span>
-                          <div class="margin-10px-top font-size14">20:30-22:00</div>
+                          <div class="margin-10px-top font-size14">20:30-21:30</div>
                       </td>
                       <td>
                           <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dancehall</span>

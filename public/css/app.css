@@ -7,6 +7,11 @@ body {
   color: black;
   margin-right: 2rem;
   border-radius: 17px;
+  height: 100%;
+}
+
+[class*="col-"] {
+  margin-bottom: 30px;
 }
 
 .card-img-top {
@@ -54,4 +59,9 @@ ul {
 
 .modal-content {
   color: black;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -6,81 +6,94 @@
 
 @include('pages.sections.header')
 
-<div class="container pt-5">
+<div class="container pt-5 text-center">
   <h1 class="text-center pb-5">HINNAKIRI 2022/23</h1>
 
-  <div class="card-deck mb-3 text-center">
-    <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".one-style-modal-lg">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">&nbsp;</h4>
-      </div>
-      <div class="card-body">
-        <br />
-        <h1 class="my-0 font-weight-normal">1 STIIL</h1>
-      </div>
-    </div>
-    <div class="card mb-4 box-shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">
-
-          <span class="bg-danger padding-2px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size15 xs-font-size13">LEMMIK</span>
-        </h4>
-      </div>
-      <div class="card-body">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".one-style-modal-lg">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">&nbsp;</h4>
+        </div>
         <div class="card-body">
-          <h4>1 STIIL + 1 STIIL</h4>
-          <h1 class="card-title pricing-card-title">-35%</h1>
+          <br />
+          <h1 class="my-0 font-weight-normal">1 STIIL</h1>
         </div>
       </div>
     </div>
-    <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".trial-exercise-modal-lg">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">&nbsp;</h4>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">
+            <span class="bg-danger padding-2px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size15 xs-font-size13">LEMMIK</span>
+          </h4>
+        </div>
+        <div class="card-body">
+          <div class="card-body">
+            <h4>1 STIIL + 1 STIIL</h4>
+            <h1 class="card-title pricing-card-title">-35%</h1>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <br />
-        <h1 class="my-0 font-weight-normal">PROOVITRENN</h1>
-        <h4>1H - <strong>TASUTA</strong></h4>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".trial-exercise-modal-lg">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">&nbsp;</h4>
+        </div>
+        <div class="card-body">
+          <br />
+          <h1 class="my-0 font-weight-normal">PROOVITRENN</h1>
+          <h4>1H - <strong>TASUTA</strong></h4>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="card-deck mb-3 text-center">
-    <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".single-lesson-modal-lg">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">&nbsp;</h4>
-      </div>
-      <div class="card-body">
-        <h2 class="my-0 font-weight-normal">ÜKSIKTUND</h2>
-      </div>
-    </div>
-    <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".ten-hour-modal-lg">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">&nbsp;</h4>
-      </div>
-      <div class="card-body">
-        <h3 class="my-0 font-weight-normal">10H KAART</h3>
-        <h1 class="card-title pricing-card-title">60€</h1>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".single-lesson-modal-lg">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">&nbsp;</h4>
+        </div>
+        <div class="card-body">
+          <h2 class="my-0 font-weight-normal">ÜKSIKTUND</h2>
+        </div>
       </div>
     </div>
-    <div class="card mb-4 box-shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">&nbsp;</h4>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".ten-hour-modal-lg">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">&nbsp;</h4>
+        </div>
+        <div class="card-body">
+          <h3 class="my-0 font-weight-normal">10H KAART</h3>
+          <h1 class="card-title pricing-card-title">60€</h1>
+        </div>
       </div>
-      <div class="card-body">
-        <h3 class="my-0 font-weight-normal">PERESOODUSTUS</h3>
-        <h1 class="card-title pricing-card-title">-10%</h1>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">&nbsp;</h4>
+        </div>
+        <div class="card-body">
+          <h3 class="my-0 font-weight-normal">PERESOODUSTUS</h3>
+          <h1 class="card-title pricing-card-title">-10%</h1>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="card-deck mb-3 text-center">
-    <div class="card mb-4 box-shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">PIIRAMATU PAKETT</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">100€</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">PIIRAMATU PAKETT</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">100€</h1>
+        </div>
       </div>
     </div>
   </div>

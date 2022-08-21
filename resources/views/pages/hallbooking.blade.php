@@ -8,7 +8,7 @@
 
 <div class="container pt-5">
 
-  <div class="embed-responsive embed-responsive-1by1 video">
+  <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="{{ URL::asset('/video/Marianna-Hutti.mp4') }}"></iframe>
   </div>
 

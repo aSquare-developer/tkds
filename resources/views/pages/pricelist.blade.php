@@ -102,7 +102,7 @@
 
 
 <div class="modal fade one-style-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="oneStyleModalTitle">1 STIIL</h5>
@@ -128,7 +128,7 @@
 </div>
 
 <div class="modal fade trial-exercise-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="trialExerciseModalTitle">PROOVITRENN</h5>
@@ -151,7 +151,7 @@
 </div>
 
 <div class="modal fade single-lesson-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="singleLessonModalTitle">ÜKSIKTUND</h5>
@@ -174,7 +174,7 @@
 </div>
 
 <div class="modal fade ten-hour-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="tenHourModalTitle">10H KAART</h5>

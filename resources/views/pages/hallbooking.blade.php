@@ -7,6 +7,11 @@
 @include('pages.sections.header')
 
 <div class="container pt-5">
+
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="{{ URL::asset('/video/Marianna-Hutti.mp4') }}"></iframe>
+  </div>
+
   <h1>Tantsusaalide rent</h1>
   <h3>Meil on kaks saalid: 45m2 ja 90m2</h3>
   <h3 class="text-success">Väike saal 1 tund = 15 euro</h3>

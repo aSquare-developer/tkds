@@ -5,7 +5,7 @@
 
   <!-- The HTML5 video element that will create the background video on the header -->
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="https://video.wixstatic.com/video/9e5bc0_00cdc0e97ee543b38bad34b280552a7d/1080p/mp4/file.mp4" type="video/mp4">
+    <source src="{{ URL::asset('/video/tkds.mp4') }}" type="video/mp4">
   </video>
 
   <!-- The header content -->

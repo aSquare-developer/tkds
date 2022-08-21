@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="col-md-4 col-sm-6 col-xs-12" data-toggle="modal" data-target=".one-plus-one-modal-lg">
       <div class="card mb-4 box-shadow">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">
@@ -44,7 +44,7 @@
         <div class="card-body">
           <br />
           <h1 class="my-0 font-weight-normal">PROOVITRENN</h1>
-          <h4>1H - <strong>TASUTA</strong></h4>
+          <h4><strong>TASUTA</strong></h4>
         </div>
       </div>
     </div>
@@ -93,6 +93,7 @@
         </div>
         <div class="card-body">
           <h1 class="card-title pricing-card-title">100€</h1>
+          <p>Tantsite nii palju kui soovite :)</p>
         </div>
       </div>
     </div>
@@ -111,16 +112,40 @@
         </button>
       </div>
       <div class="modal-body">
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>1H X NÄDALAS / KUU - 42€</li>
-          <li>1.5H X NÄDALAS / KUU - 50€</li>
-          <li>2H X NÄDALAS / KUU - 55€</li>
-          <li>3H X NÄDALAS / KUU - 60€</li>
-        </ul>
+        <p>
+          1H X NÄDALAS / KUU - 42€ <br />
+          1.5H X NÄDALAS / KUU - 50€ <br />
+          2H X NÄDALAS / KUU - 55€ <br />
+          3H X NÄDALAS / KUU - 60€
+        </p>
+        <p>
+          Kui trenn toimub üks kord nädalas ning kestab üks tund kord, siis kuumakse on 42€<br />
+          Kui trenn toimub üks kord nädalas ning kestab poolteist tundi kord, siis on 50€<br />
+          Kui trenn toimub kaks korda nädalas ning kestab üks tund kord, siis kuumakse on 55€<br />
+          Kui trenn toimub kaks korda nädalas ning kestab poolteist tundi kord, siis kuumakse on 60€
+        </p>
         <p>
           Kuupakett sisaldab:<br />
-          4 trennid kuus (kui trenn toimub 1 kord nädalas, 1.5H / 2H)<br />
+          4 trennid kuus (kui trenn toimub 1 kord nädalas, 1H / 1.5H / 2H)<br />
           8 trennid kuus (kui trenn toimub 2 korda nädalas, 1H / 1.5H)
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade one-plus-one-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="onePlusOneModalTitle">1 STIIL + 1 STIIL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Kahe stiili valimisel on pakkumine -35% kogusummalt.
         </p>
       </div>
     </div>
@@ -137,13 +162,10 @@
         </button>
       </div>
       <div class="modal-body">
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>1.5H - 10€</li>
-          <li>2H - 15€</li>
-        </ul>
         <p>
-          Kui soovite tundidest jätkata, siis proovitrenn on kuupaketi sees.<br />
-          Proovitundi tuleks registreeruda eposti teel.
+          Tasuta proovitreeningu saamiseks palun kirjutage meile info@tkds.ee. <br />
+          Täpsustage mis stiili soovite võtta ja me kutsume Teid tundi. <br />
+          Registreerumise puudumisel võetakse tasu ühekordse õppetunni eest.
         </p>
       </div>
     </div>
@@ -160,12 +182,11 @@
         </button>
       </div>
       <div class="modal-body">
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>1H | 10€</li>
-          <li>1.5H | 15€</li>
-          <li>2H | 20€</li>
-        </ul>
+
         <p>
+          Üks trenn mis kestab üks tund - 10€<br />
+          Üks trenn mis kestab poolteist tundi - 15€<br />
+          Üks trenn mis kestab kaks tundi - 20€<br /><br />
           Ühekordse visiidi korral, saate maksta enne trenni sularahas
         </p>
       </div>

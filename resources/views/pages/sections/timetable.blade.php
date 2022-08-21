@@ -86,8 +86,7 @@
                       <div class="font-size13 text-light-gray">Open</div>
                     </td>
                     <td>
-                        <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Heels</span>
-                        <div class="margin-10px-top font-size14">18:00-19:30</div>
+
                     </td>
                     <td>
                       <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Hip-Hop</span>
@@ -149,7 +148,8 @@
 
                       </td>
                       <td>
-
+                        <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Heels</span>
+                        <div class="margin-10px-top font-size14">20:00-21:30</div>
                       </td>
                   </tr>
 
@@ -204,8 +204,8 @@
                     </td>
                     <td>
                       <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dancehall</span>
-                      <div class="margin-10px-top font-size14">21:00-22:30</div>
-                      <div class="font-size13 text-light-gray">Female</div>
+                      <div class="margin-10px-top font-size14">21:00-22:00</div>
+                      <div class="font-size13 text-light-gray">Female(16+)</div>
                     </td>
                     <td>
 
@@ -213,7 +213,7 @@
                     <td>
                       <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dancehall</span>
                       <div class="margin-10px-top font-size14">17:00-18:00</div>
-                      <div class="font-size13 text-light-gray">Kids</div>
+                      <div class="font-size13 text-light-gray">Kids(Aged 8-13)</div>
                     </td>
                     <td>
 

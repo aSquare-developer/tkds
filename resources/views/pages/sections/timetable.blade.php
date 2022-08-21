@@ -56,8 +56,9 @@
                           <div class="margin-10px-top font-size14">13:00-14:30</div>
                       </td>
                       <td>
-                          <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
-                          <div class="margin-10px-top font-size14">15:30-17:00</div>
+                        <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Hip-Hop</span>
+                        <div class="margin-10px-top font-size14">17:00-18:30</div>
+                        <div class="font-size13 text-light-gray">Freestyle</div>
                       </td>
                   </tr>
 
@@ -86,12 +87,13 @@
                       <div class="font-size13 text-light-gray">Open</div>
                     </td>
                     <td>
-
+                      <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Experimental</span>
+                      <div class="margin-10px-top font-size14">16:00-18:00</div>
                     </td>
                     <td>
-                      <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Hip-Hop</span>
-                      <div class="margin-10px-top font-size14">17:00-18:30</div>
-                      <div class="font-size13 text-light-gray">Freestyle</div>
+                      <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Hip-Hop</span>
+                      <div class="margin-10px-top font-size14">18:30-20:00</div>
+                      <div class="font-size13 text-light-gray">Choreo</div>
                     </td>
                   </tr>
 
@@ -122,9 +124,8 @@
                           <div class="margin-10px-top font-size14">18:00-19:30</div>
                       </td>
                       <td>
-                        <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Hip-Hop</span>
-                        <div class="margin-10px-top font-size14">18:30-20:00</div>
-                        <div class="font-size13 text-light-gray">Choreo</div>
+                        <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Heels</span>
+                        <div class="margin-10px-top font-size14">20:00-21:30</div>
                       </td>
                   </tr>
 
@@ -148,8 +149,7 @@
 
                       </td>
                       <td>
-                        <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Heels</span>
-                        <div class="margin-10px-top font-size14">20:00-21:30</div>
+
                       </td>
                   </tr>
 

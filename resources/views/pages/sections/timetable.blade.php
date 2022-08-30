@@ -47,9 +47,7 @@
                           <div class="font-size13 text-light-gray">Advance</div>
                       </td>
                       <td>
-                          <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dancehall</span>
-                          <div class="margin-10px-top font-size14">16:30-18:00</div>
-                          <div class="font-size13 text-light-gray">Niina</div>
+
                       </td>
                       <td>
                           <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Stretching</span>
@@ -120,8 +118,7 @@
                         <div class="margin-10px-top font-size14">19:30-21:00</div>
                       </td>
                       <td>
-                          <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Heels</span>
-                          <div class="margin-10px-top font-size14">18:00-19:30</div>
+
                       </td>
                       <td>
                         <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Heels</span>
@@ -203,7 +200,7 @@
                       <div class="font-size13 text-light-gray">Kids</div>
                     </td>
                     <td>
-                      <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dancehall</span>
+                      <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dancehall</span>
                       <div class="margin-10px-top font-size14">21:00-22:00</div>
                       <div class="font-size13 text-light-gray">Female(16+)</div>
                     </td>
@@ -227,7 +224,9 @@
                   </tr>
                   <tr>
                     <td>
-
+                      <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dancehall</span>
+                      <div class="margin-10px-top font-size14">19:00-20:30</div>
+                      <div class="font-size13 text-light-gray">Niina</div>
                     </td>
                     <td>
 

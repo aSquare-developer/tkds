@@ -70,6 +70,6 @@ class MainController extends Controller
       Mail::to("info@tkds.ee")->send(new RegisterForTrialTrainingEmail($mailData));
 
       // Redirect back to home page with success message
-      return redirect()->back()->with('success', 'Täname registreerumast! Saadame Teile kirja mis päeval ja kell saate tasuta proovitunnis osaleda.');
+      return redirect()->back()->with('success', 'Täname registreerimise eest! Saadame Teile infot mis päeval saate meie tundi proovida tulla!');
     }
 }

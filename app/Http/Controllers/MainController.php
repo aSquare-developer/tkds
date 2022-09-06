@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Mail\RegisterForLessonsEmail;
 use App\Mail\NewStudentNotificationEmail;
+use App\Mail\RegisterForTrialTrainingEmail;
+use App\Mail\TrialTrainingNotificationEmail;
 
 use App\Models\RegisterNewStudent;
+use App\Models\RegisterTrialTraining;
 use App\Models\Dancestyle;
 
 use Illuminate\Http\Request;
@@ -45,5 +48,32 @@ class MainController extends Controller
       // Redirect back to home page with success message
       return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');
 
+    }
+
+    public function registerForTrialTraining(Request $request) {
+      // Create a record in database of new student
+      RegisterTrialTraining::create([
+        'fullname' => $request->fullname,
+        'aeg' => $request->aeg,
+        'dancestyles' => $request->dancestyle,
+        'email' => $request->email
+      ]);
+
+      // Create a data for email
+      $mailData = [
+        "fullname" => $request->fullname,
+        "aeg" => $request->aeg,
+        "dancestyle" => $request->dancestyle,
+        "email" => $request->email
+      ];
+
+      // Send email with data
+      Mail::to("info@asquare.ee")->send(new RegisterForTrialTrainingEmail($mailData));
+
+      // Send notification email to new student
+      Mail::to($request->email)->send(new TrialTrainingNotificationEmail());
+
+      // Redirect back to home page with success message
+      return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');
     }
 }

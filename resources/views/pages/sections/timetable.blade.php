@@ -10,6 +10,7 @@
 
     <!-- Tab panes -->
     <div class="tab-content pt-3">
+
       <div role="tabpanel" class="tab-pane active" id="bighall">
         <div class="table-responsive">
           <table class="table text-center">

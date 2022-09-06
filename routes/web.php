@@ -30,6 +30,7 @@ Route::get('/rent', [HallBookingController::class, 'index'])->name('hall-booking
 Route::get('/hinnakiri', [PriceListController::class, 'index'])->name('price-list');
 
 Route::post('/register-for-lessons', [MainController::class, 'registerForLessons']);
+Route::post('/register-for-trial-training', [MainController::class, 'registerForTrialTraining']);
 
 Route::post('/contact-us', [ContactUsController::class, 'sendMessage']);
 

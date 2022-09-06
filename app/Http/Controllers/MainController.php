@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Mail\RegisterForLessonsEmail;
 use App\Mail\NewStudentNotificationEmail;
 use App\Mail\RegisterForTrialTrainingEmail;
-use App\Mail\TrialTrainingNotificationEmail;
 
 use App\Models\RegisterNewStudent;
 use App\Models\RegisterTrialTraining;
@@ -68,12 +67,9 @@ class MainController extends Controller
       ];
 
       // Send email with data
-      Mail::to("info@asquare.ee")->send(new RegisterForTrialTrainingEmail($mailData));
-
-      // Send notification email to new student
-      Mail::to($request->email)->send(new TrialTrainingNotificationEmail());
+      Mail::to("info@tkds.ee")->send(new RegisterForTrialTrainingEmail($mailData));
 
       // Redirect back to home page with success message
-      return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');
+      return redirect()->back()->with('success', 'Täname registreerumast! Saadame Teile kirja mis päeval ja kell saate tasuta proovitunnis osaleda.');
     }
 }

@@ -36,7 +36,7 @@ class RegisterForTrialTrainingEmail extends Mailable
 
         return $this
                 ->subject('Proovitrennile registreerimine')
-                ->from('info@asquare.ee', 'TKDS')
+                ->from('info@tkds.ee', 'TKDS')
                 ->replyTo($fromAddres, $fullname)
                 ->view('email.trial-training');
     }

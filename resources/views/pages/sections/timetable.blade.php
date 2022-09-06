@@ -199,6 +199,7 @@
                       <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dancehall</span>
                       <div class="margin-10px-top font-size14">17:00-18:00</div>
                       <div class="font-size13 text-light-gray">Kids</div>
+                      <div class="font-size13 text-light-gray">Kids(Aged 8-13)</div>
                     </td>
                     <td>
                       <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dancehall</span>

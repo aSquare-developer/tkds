@@ -184,7 +184,7 @@
       <div class="modal-body">
 
         <p>
-          Üks trenn mis kestab üks tund - 10€<br />
+          Üks trenn mis kestab üks tund - 13€<br />
           Üks trenn mis kestab poolteist tundi - 15€<br />
           Üks trenn mis kestab kaks tundi - 20€<br /><br />
           Ühekordse visiidi korral, saate maksta enne trenni sularahas

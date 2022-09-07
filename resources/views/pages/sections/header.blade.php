@@ -14,8 +14,19 @@
       <div class="w-100 text-white">
         <h1 class="display-3">TKDS Dance Studio</h1>
         <p class="lead mb-4">Tantsustuudio kaasaegsete tantsustiilidega, mis sobib inimestele igas vanuserühmas ja erineva tasemega. </p>
-        <a href="#" class="btn btn-success btn-lg mt-3" data-toggle="modal" data-target=".register-modal-lg">REGISTREERI TUNDIDESSE</a>
-        <a href="#" class="btn btn-success btn-lg mt-3" data-toggle="modal" data-target=".trial-training-modal-lg">PROVITRENN</a>
+
+        <div class="row">
+          <div class="col">
+            <a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target=".register-modal-lg">REGISTREERI TUNDIDESSE</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col mt-3">
+            <a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target=".trial-training-modal-lg">PROVITRENN</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

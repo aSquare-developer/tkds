@@ -122,8 +122,6 @@
 
                       </td>
                       <td>
-                        <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Heels</span>
-                        <div class="margin-10px-top font-size14">20:00-21:30</div>
                       </td>
                   </tr>
 

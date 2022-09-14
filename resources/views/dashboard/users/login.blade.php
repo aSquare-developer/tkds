@@ -1,11 +1,22 @@
-@extends('dashboard.layout')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="">
 
-@section('title', config('app.name') . ' ' . 'Sign in')
+   <title>@yield('title')</title>
 
-@section('content')
+   <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
+
+   <!-- Custom styles for this template -->
+   <link rel="stylesheet" href="{{ URL::asset('css/signin.css') }}">
+ </head>
 
 
-
+<body class="text-center">
 <form class="form-signin" method="POST" action="{{ route('login') }}">
   @csrf
 
@@ -16,7 +27,7 @@
       {{ session()->get('error-message') }}
     </small></p>
   @endif
-  
+
   <div class="form-group mb-3">
     <input type="email" class="form-control" name="email" placeholder="Email address" value="{{ old('email') }}" required autofocus>
     @error('email')
@@ -39,4 +50,5 @@
   </p>
 </form>
 
-@endsection
+</body>
+</html>

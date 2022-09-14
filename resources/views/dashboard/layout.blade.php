@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="en">
 @include('dashboard.includes.head')
 <body>
 
-  @yield('content')
+  @include('dashboard.includes.nav')
 
+  <div class="container-fluid">
+    <div class="row">
+      @include('dashboard.includes.menu')
+
+      @include('dashboard.includes.main')
+    </div>
+  </div>
+
+@include('dashboard.includes.scripts')
 </body>
 </html>

@@ -7,7 +7,7 @@ use App\Http\Controllers\HallBookingController;
 use App\Http\Controllers\PriceListController;
 
 use App\Http\Controllers\DashboardController;
-
+use App\Http\Controllers\TaskListController;
 
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
@@ -45,3 +45,5 @@ Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perfor
 
 // Dashboard Routes
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard-index');
+// Dashboard Routes
+Route::get('/dashboard/tasks', [TaskListController::class, 'index'])->name('dashboard-tasks');

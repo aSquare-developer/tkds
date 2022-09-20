@@ -119,6 +119,9 @@
           3H X NÄDALAS / KUU - 60€
         </p>
         <p>
+          <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
+        </p>
+        <p>
           Kui trenn toimub üks kord nädalas ning kestab üks tund kord, siis kuumakse on 42€<br />
           Kui trenn toimub üks kord nädalas ning kestab poolteist tundi kord, siis on 50€<br />
           Kui trenn toimub kaks korda nädalas ning kestab üks tund kord, siis kuumakse on 55€<br />
@@ -147,6 +150,9 @@
         <p>
           Kahe stiili valimisel on pakkumine -35% kogusummalt.
         </p>
+        <p>
+          <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
+        </p>
       </div>
     </div>
   </div>
@@ -166,6 +172,9 @@
           Tasuta proovitreeningu saamiseks palun kirjutage meile info@tkds.ee. <br />
           Täpsustage mis stiili soovite võtta ja me kutsume Teid tundi. <br />
           Registreerumise puudumisel võetakse tasu ühekordse õppetunni eest.
+        </p>
+        <p>
+          <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
         </p>
       </div>
     </div>

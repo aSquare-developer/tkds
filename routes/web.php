@@ -45,5 +45,6 @@ Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perfor
 
 // Dashboard Routes
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard-index');
-// Dashboard Routes
+
 Route::get('/dashboard/tasks', [TaskListController::class, 'index'])->name('dashboard-tasks');
+Route::get('/dashboard/tasks/create', [TaskListController::class, 'create'])->name('dashboard-tasks-create');

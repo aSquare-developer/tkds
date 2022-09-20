@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class TaskListController extends Controller
 {
   public function index() {
-    return view('dashboard.pages.tasks');
+    return view('dashboard.pages.task.index');
+  }
+
+  public function create() {
+    return view('dashboard.pages.task.create');
   }
 }

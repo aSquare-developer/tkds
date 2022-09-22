@@ -15,12 +15,12 @@
 
 @section('content')
 
-<form>
+<form action="{{ route('dashboard-task-store') }}" method="post">@csrf
   <div class="form-group">
-    <input type="text" class="form-control" id="taskName" placeholder="Task name" required>
+    <input type="text" class="form-control" name="name" placeholder="Task name" required>
   </div>
   <div class="form-group">
-    <textarea class="form-control" id="taskDescription" rows="5" placeholder="Task description" required></textarea>
+    <textarea class="form-control" name="description" rows="5" placeholder="Task description" required></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Save</button>
 </form>

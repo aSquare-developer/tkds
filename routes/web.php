@@ -43,8 +43,12 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perform');
 
-// Dashboard Routes
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard-index');
 
-Route::get('/dashboard/tasks', [TaskListController::class, 'index'])->name('dashboard-tasks');
-Route::get('/dashboard/tasks/create', [TaskListController::class, 'create'])->name('dashboard-tasks-create');
+  // Dashboard Routes
+  Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard-index');
+
+  Route::get('/dashboard/tasks', [TaskListController::class, 'index'])->name('dashboard-tasks');
+  Route::get('/dashboard/tasks/{id}', [TaskListController::class, 'show'])->name('dashboard-task-show');
+  Route::get('/dashboard/task/create', [TaskListController::class, 'create'])->name('dashboard-task-create');
+  Route::post('/dashboard/task/store', [TaskListController::class, 'store'])->name('dashboard-task-store');
+  Route::get('/dashboard/task/delete/{id}', [TaskListController::class, 'delete'])->name('dashboard-task-delete');

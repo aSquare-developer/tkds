@@ -29,6 +29,6 @@ class RegisterController extends Controller {
 
       auth()->login($user);
 
-      return redirect()->route('dashboard-index')->with('message', 'User created and logged in.');
+      return redirect()->route('sign-in-page')->with('message', 'User was successfully created!');
   }
 }

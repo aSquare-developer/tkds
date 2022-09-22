@@ -17,6 +17,7 @@
 
 
 <body class="text-center">
+  @include('includes.message')
 <form class="form-signin" method="POST" action="{{ route('login') }}">
   @csrf
 

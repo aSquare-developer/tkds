@@ -36,4 +36,10 @@ class TaskListController extends Controller
     return redirect()->route('dashboard-tasks')->with('delete', 'Your task was deleted successfully.');
   }
 
+  public function changeStatus(Request $request, $id) {
+    $status = $request->status;
+    Task::where('id', $id)->update(['status'=> $status]);
+    return redirect()->route('dashboard-tasks')->with('success', 'Your task status was changed!');
+  }
+
 }

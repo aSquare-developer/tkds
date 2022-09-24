@@ -9,10 +9,11 @@ class DashboardController extends Controller
 {
     public function index() {
 
-      if (Auth::check()) {
-        return view('dashboard.pages.index');
+      if (!Auth::check()) {
+          return redirect()->route('sign-in-page');
       }
-      return abort(404);
+      return view('dashboard.pages.index');
+
 
     }
 }

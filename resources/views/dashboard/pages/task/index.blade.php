@@ -38,7 +38,7 @@
           </td>
           <td>{{ $task->description }}</td>
           <td>{{ $task->created_at }} / {{ $task->updated_at }}</td>
-          <td>{{ $task->status }}</td>
+          <td>@include('dashboard.pages.task.status.template')</td>
           <td>
             <a href="{{ route('dashboard-task-delete', $task->id) }}" class="btn btn-danger btn-sm" role="button">Delete</a>
           </td>

@@ -49,6 +49,7 @@ Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perfor
 
   Route::get('/dashboard/tasks', [TaskListController::class, 'index'])->name('dashboard-tasks');
   Route::get('/dashboard/tasks/{id}', [TaskListController::class, 'show'])->name('dashboard-task-show');
+  Route::post('/dashboard/task/{id}/change-status', [TaskListController::class, 'changeStatus'])->name('dashboard-task-change-status');
   Route::get('/dashboard/task/create', [TaskListController::class, 'create'])->name('dashboard-task-create');
   Route::post('/dashboard/task/store', [TaskListController::class, 'store'])->name('dashboard-task-store');
   Route::get('/dashboard/task/delete/{id}', [TaskListController::class, 'delete'])->name('dashboard-task-delete');

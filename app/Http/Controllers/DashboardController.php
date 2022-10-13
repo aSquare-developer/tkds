@@ -12,8 +12,7 @@ class DashboardController extends Controller
       if (!Auth::check()) {
           return redirect()->route('sign-in-page');
       }
+
       return view('dashboard.pages.index');
-
-
     }
 }

@@ -11,4 +11,11 @@ class Task extends Model
     protected $fillable = [
       'name', 'description', 'status'
     ];
+
+    public function updateTask($name, $description) {
+      $this->name = $name;
+      $this->description = $description;
+      $this->save();
+      return true;
+    }
 }

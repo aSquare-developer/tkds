@@ -9,6 +9,7 @@ use App\Mail\RegisterForTrialTrainingEmail;
 use App\Models\RegisterNewStudent;
 use App\Models\RegisterTrialTraining;
 use App\Models\Dancestyle;
+use App\Models\Header;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -17,7 +18,8 @@ class MainController extends Controller
 {
     public function index() {
       $dancestyles = Dancestyle::all();
-      return view('pages.index', compact('dancestyles'));
+      $header = Header::find(1);
+      return view('pages.index', compact('dancestyles', 'header'));
     }
 
     public function registerForLessons(Request $req) {

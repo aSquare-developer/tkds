@@ -8,6 +8,7 @@ use App\Http\Controllers\PriceListController;
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TaskListController;
+use App\Http\Controllers\HeaderController;
 
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
@@ -47,10 +48,16 @@ Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perfor
   // Dashboard Routes
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard-index');
 
+  // Dashboard Task Section
   Route::get('/dashboard/tasks', [TaskListController::class, 'index'])->name('dashboard-tasks');
-  Route::get('/dashboard/tasks/{id}', [TaskListController::class, 'show'])->name('dashboard-task-show');
+  Route::get('/dashboard/task/{id}', [TaskListController::class, 'show'])->name('dashboard-task-show');
   Route::post('/dashboard/task/{id}/change-status', [TaskListController::class, 'changeStatus'])->name('dashboard-task-change-status');
   Route::get('/dashboard/task/create', [TaskListController::class, 'create'])->name('dashboard-task-create');
   Route::post('/dashboard/task/store', [TaskListController::class, 'store'])->name('dashboard-task-store');
+  Route::get('/dashboard/task/{id}/edit', [TaskListController::class, 'edit'])->name('dashboard-task-edit');
   Route::post('/dashboard/task/{id}/update', [TaskListController::class, 'update'])->name('dashboard-task-update');
-  Route::get('/dashboard/task/delete/{id}', [TaskListController::class, 'delete'])->name('dashboard-task-delete');
+  Route::get('/dashboard/task/{id}/delete', [TaskListController::class, 'delete'])->name('dashboard-task-delete');
+
+  // Dashboard header section
+  Route::get('/dashboard/header', [HeaderController::class, 'index'])->name('dashboard-header');
+  Route::post('/dashboard/header/store', [HeaderController::class, 'store'])->name('dashboard-store');

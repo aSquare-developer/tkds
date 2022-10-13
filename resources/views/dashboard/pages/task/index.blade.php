@@ -40,7 +40,7 @@
           <td>{{ $task->created_at->format('d M Y H:i') }} / {{ $task->updated_at->format('d M Y H:i') }}</td>
           <td>@include('dashboard.pages.task.status.template')</td>
           <td>
-            <a href="#" class="btn btn-warning btn-sm" role="button">Edit</a>
+            <a href="{{ route('dashboard-task-edit', $task->id) }}" class="btn btn-warning btn-sm" role="button">Edit</a>
             <a href="{{ route('dashboard-task-delete', $task->id) }}" class="btn btn-danger btn-sm" role="button">Delete</a>
           </td>
         </tr>

@@ -23,7 +23,7 @@
 
         <div class="row">
           <div class="col mt-3">
-            <a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target=".trial-training-modal-lg">PROVITRENN</a>
+            <a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target=".trial-training-modal-lg">PROOVITRENN</a>
           </div>
         </div>
 

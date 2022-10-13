@@ -26,6 +26,10 @@ class TaskListController extends Controller
     return redirect()->route('dashboard-tasks')->with('success', 'Your task was added to list successfully.');
   }
 
+  public function update(Request $request, $id) {
+    
+  }
+
   public function show($id) {
     $task = Task::find($id);
     return view('dashboard.pages.task.show', compact('task'));

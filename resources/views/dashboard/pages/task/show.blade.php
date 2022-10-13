@@ -15,11 +15,13 @@
       </form>
     </div>
     <div class="form-group mr-2">
+      <a href="#" class="btn btn-warning btn-sm" role="button">Edit</a>
+    </div>
+    <div class="form-group mr-2">
       <a href="{{ route('dashboard-tasks') }}" class="btn btn-sm btn-outline-success">Back</a>
     </div>
   </div>
 @endsection
-
 
 @section('content')
 

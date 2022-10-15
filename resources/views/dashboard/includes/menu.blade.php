@@ -16,12 +16,19 @@
       </li>
 
       <li class="nav-item">
+        <a class="nav-link {{ (request()->segment(2) == 'dancestyle') ? 'active' : '' }}" href="{{ route('dashboard-dancestyle') }}">
+          <span data-feather="list"></span>
+          Dancestyle
+        </a>
+      </li>
+
+      <li class="nav-item">
         <a class="nav-link {{ (request()->segment(2) == 'tasks') ? 'active' : '' }}" href="{{ route('dashboard-tasks') }}">
           <span data-feather="list"></span>
           Tasks
         </a>
       </li>
-      
+
     </ul>
   </div>
 </nav>

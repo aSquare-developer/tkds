@@ -3,7 +3,7 @@
 @section('title', config('app.name') . ' ' . 'Create task page')
 
 @section('content-title')
-<h1 class="h2">Edit task</h1>
+<h1 class="h2">Edit > {{ $task->name }}</h1>
   <div class="btn-toolbar mb-2 mb-md-0">
     <div class="btn-group mr-2">
       <a href="{{ route('dashboard-tasks') }}" class="btn btn-sm btn-outline-success">Back</a>

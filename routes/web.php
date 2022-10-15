@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\HallBookingController;
@@ -9,6 +10,7 @@ use App\Http\Controllers\PriceListController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TaskListController;
 use App\Http\Controllers\HeaderController;
+use App\Http\Controllers\DancestyleController;
 
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
@@ -61,3 +63,7 @@ Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perfor
   // Dashboard header section
   Route::get('/dashboard/header', [HeaderController::class, 'index'])->name('dashboard-header');
   Route::post('/dashboard/header/store', [HeaderController::class, 'store'])->name('dashboard-store');
+
+  // Dashboard Dancestyle section
+  Route::get('/dashboard/dancestyle', [DancestyleController::class, 'index'])->name('dashboard-dancestyle');
+  Route::get('/dashboard/dancestyle/{id}', [DancestyleController::class, 'show'])->name('dashboard-dancestyle-show');

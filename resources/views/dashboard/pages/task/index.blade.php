@@ -7,7 +7,6 @@
   <div class="btn-toolbar mb-2 mb-md-0">
     <div class="btn-group mr-2">
       <a href="{{ route('dashboard-task-create') }}" class="btn btn-sm btn-outline-success">Create task</a>
-
     </div>
   </div>
 @endsection

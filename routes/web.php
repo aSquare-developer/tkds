@@ -46,12 +46,13 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perform');
 
-
+Route::middleware(['auth'])->group(function () {
   // Dashboard Routes
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard-index');
 
   // Dashboard Task Section
   Route::get('/dashboard/tasks', [TaskListController::class, 'index'])->name('dashboard-tasks');
+  Route::get('/dashboard/task/create', [TaskListController::class, 'create'])->name('dashboard-task-create');
   Route::get('/dashboard/task/{id}', [TaskListController::class, 'show'])->name('dashboard-task-show');
   Route::post('/dashboard/task/{id}/change-status', [TaskListController::class, 'changeStatus'])->name('dashboard-task-change-status');
   Route::get('/dashboard/task/create', [TaskListController::class, 'create'])->name('dashboard-task-create');
@@ -66,4 +67,9 @@ Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perfor
 
   // Dashboard Dancestyle section
   Route::get('/dashboard/dancestyle', [DancestyleController::class, 'index'])->name('dashboard-dancestyle');
-  Route::get('/dashboard/dancestyle/{id}', [DancestyleController::class, 'show'])->name('dashboard-dancestyle-show');
+  Route::get('/dashboard/dancestyle/create', [DancestyleController::class, 'create'])->name('dashboard-dancestyle-create');
+  Route::post('/dashboard/dancestyle/store', [DancestyleController::class, 'store'])->name('dashboard-dancestyle-store');
+  Route::get('/dashboard/dancestyle/{id}/edit', [DancestyleController::class, 'edit'])->name('dashboard-dancestyle-edit');
+  Route::post('/dashboard/dancestyle/{id}/update', [DancestyleController::class, 'update'])->name('dashboard-dancestyle-update');
+  Route::get('/dashboard/dancestyle/{id}/delete', [DancestyleController::class, 'delete'])->name('dashboard-dancestyle-delete');
+});

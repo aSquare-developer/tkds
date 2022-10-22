@@ -6,7 +6,7 @@
 <h1 class="h2">Dancestyle section</h1>
 <div class="btn-toolbar mb-2 mb-md-0">
   <div class="btn-group mr-2">
-    <a href="#" class="btn btn-sm btn-outline-success">Create new Dancestyle</a>
+    <a href="{{ route('dashboard-dancestyle-create') }}" class="btn btn-sm btn-outline-success">Create new Dancestyle</a>
   </div>
 </div>
 @endsection
@@ -35,14 +35,14 @@
             </a>
           </td>
           <td>
-            <a href="{{ route('dashboard-dancestyle-show', $dancestyle->id) }}">
+            <a href="{{ route('dashboard-dancestyle-edit', $dancestyle->id) }}">
               {{ $dancestyle->name }}
             </a>
           </td>
           <td>{{ \Illuminate\Support\Str::limit($dancestyle->description, 175) }}</td>
           <td>
-            <a href="#" class="btn btn-warning btn-sm" role="button">Edit</a>
-            <a href="#" class="btn btn-danger btn-sm" role="button">Delete</a>
+            <a href="{{ route('dashboard-dancestyle-edit', $dancestyle->id) }}" class="btn btn-warning btn-sm" role="button">Edit</a>
+            <a href="{{ route('dashboard-dancestyle-delete', $dancestyle->id) }}" class="btn btn-danger btn-sm" role="button">Delete</a>
           </td>
         </tr>
       @endforeach

@@ -44,11 +44,11 @@
   </div>
 
   <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  <p>
+  <!-- <p>
     <small>
       If you don't have a user, you can <a href="{{ route('sign-up-page') }}">Sign up</a>.
     </small>
-  </p>
+  </p> -->
 </form>
 
 </body>

@@ -5,17 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Task extends Model
+class RentPage extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-      'name', 'description', 'status'
+      'title', 'video_url', 'content'
     ];
 
-    public function updateTask($name, $description) {
-      $this->name = $name;
-      $this->description = $description;
+    public function editRentPageWith($title, $video_url, $content) {
+      $this->title = $title;
+      $this->video_url = $video_url;
+      $this->content = $content;
 
       if($this->save()) {
         return true;

@@ -9,7 +9,7 @@
 
 @section('content')
 
-<form action="{{ route('dashboard-store') }}" method="post">@csrf
+<form action="{{ route('dashboard-header-store') }}" method="post">@csrf
   <div class="form-group">
     <label for="title">Title</label>
     <input type="text" class="form-control" id="title" name="title" placeholder="" value="{{ $header->title }}" required>

@@ -18,7 +18,6 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Description</th>
         <th scope="col">Created/Updated</th>
@@ -29,7 +28,6 @@
     <tbody>
       @foreach($tasks as $task)
         <tr>
-          <th scope="row">{{ $task->id }}</th>
           <td>
             <a href="{{ route('dashboard-task-show', $task->id) }}">
               {{ $task->name }}

@@ -11,6 +11,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TaskListController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\DancestyleController;
+use App\Http\Controllers\RentPageController;
 
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
@@ -60,9 +61,9 @@ Route::middleware(['auth'])->group(function () {
   Route::post('/dashboard/task/{id}/update', [TaskListController::class, 'update'])->name('dashboard-task-update');
   Route::get('/dashboard/task/{id}/delete', [TaskListController::class, 'delete'])->name('dashboard-task-delete');
 
-  // Dashboard header section
+  // Dashboard Main page section
   Route::get('/dashboard/header', [HeaderController::class, 'index'])->name('dashboard-header');
-  Route::post('/dashboard/header/store', [HeaderController::class, 'store'])->name('dashboard-store');
+  Route::post('/dashboard/header/store', [HeaderController::class, 'store'])->name('dashboard-header-store');
 
   // Dashboard Dancestyle section
   Route::get('/dashboard/dancestyle', [DancestyleController::class, 'index'])->name('dashboard-dancestyle');
@@ -71,4 +72,8 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/dashboard/dancestyle/{id}/edit', [DancestyleController::class, 'edit'])->name('dashboard-dancestyle-edit');
   Route::post('/dashboard/dancestyle/{id}/update', [DancestyleController::class, 'update'])->name('dashboard-dancestyle-update');
   Route::get('/dashboard/dancestyle/{id}/delete', [DancestyleController::class, 'delete'])->name('dashboard-dancestyle-delete');
+
+  // Dashboard Rent page Section
+  Route::get('/dashboard/rent', [RentPageController::class, 'index'])->name('dashboard-rent');
+  Route::post('/dashboard/rent/store', [RentPageController::class, 'store'])->name('dashboard-rent-store');
 });

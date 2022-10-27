@@ -11,14 +11,21 @@
       <li class="nav-item">
         <a class="nav-link {{ (request()->segment(2) == 'header') ? 'active' : '' }}" href="{{ route('dashboard-header') }}">
           <span data-feather="list"></span>
-          Header section
+          Main page
         </a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link {{ (request()->segment(2) == 'dancestyle') ? 'active' : '' }}" href="{{ route('dashboard-dancestyle') }}">
           <span data-feather="list"></span>
-          Dancestyle
+          Dancestyles
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link {{ (request()->segment(2) == 'rent') ? 'active' : '' }}" href="{{ route('dashboard-rent') }}">
+          <span data-feather="list"></span>
+          Rent page
         </a>
       </li>
 

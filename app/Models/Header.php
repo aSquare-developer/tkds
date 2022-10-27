@@ -20,7 +20,11 @@ class Header extends Model
       $this->trial_button = $trial_button;
       $this->about_first = $about_first;
       $this->about_second = $about_second;
-      $this->save();
-      return true;
+      
+      if($this->save()) {
+        return true;
+      } else {
+        return false;
+      }
     }
 }

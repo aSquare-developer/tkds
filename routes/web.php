@@ -53,10 +53,9 @@ Route::middleware(['auth'])->group(function () {
   // Dashboard Task Section
   Route::get('/dashboard/tasks', [TaskListController::class, 'index'])->name('dashboard-tasks');
   Route::get('/dashboard/task/create', [TaskListController::class, 'create'])->name('dashboard-task-create');
+  Route::post('/dashboard/task/store', [TaskListController::class, 'store'])->name('dashboard-task-store');
   Route::get('/dashboard/task/{id}', [TaskListController::class, 'show'])->name('dashboard-task-show');
   Route::post('/dashboard/task/{id}/change-status', [TaskListController::class, 'changeStatus'])->name('dashboard-task-change-status');
-  Route::get('/dashboard/task/create', [TaskListController::class, 'create'])->name('dashboard-task-create');
-  Route::post('/dashboard/task/store', [TaskListController::class, 'store'])->name('dashboard-task-store');
   Route::get('/dashboard/task/{id}/edit', [TaskListController::class, 'edit'])->name('dashboard-task-edit');
   Route::post('/dashboard/task/{id}/update', [TaskListController::class, 'update'])->name('dashboard-task-update');
   Route::get('/dashboard/task/{id}/delete', [TaskListController::class, 'delete'])->name('dashboard-task-delete');

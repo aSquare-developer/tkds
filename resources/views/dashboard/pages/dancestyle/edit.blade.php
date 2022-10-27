@@ -24,15 +24,15 @@
   </div>
   <div class="form-group">
     <label for="description" class="form-label">Description</label>
-    <textarea class="form-control" id="description" name="description" rows="5" placeholder="" required>{{ $dancestyle->description }}</textarea>
+    <textarea class="form-control" id="description" name="description" rows="5" placeholder="">{{ $dancestyle->description }}</textarea>
   </div>
   <div class="form-group">
     <label for="dancestyle_description" class="form-label">Dancestyle description</label>
-    <textarea class="form-control" id="dancestyle_description" name="dancestyle_description" rows="5" placeholder="" required>{{ $dancestyle->dancestyle_description }}</textarea>
+    <textarea class="form-control" id="dancestyle_description" name="dancestyle_description" rows="5" placeholder="">{{ $dancestyle->dancestyle_description }}</textarea>
   </div>
   <div class="form-group">
     <label for="youtube_link" class="form-label">Youtube link</label>
-    <textarea class="form-control" id="youtube_link" name="youtube_link" rows="5" placeholder="" required>{{ $dancestyle->youtube_link }}</textarea>
+    <textarea class="form-control" id="youtube_link" name="youtube_link" rows="5" placeholder="">{{ $dancestyle->youtube_link }}</textarea>
   </div>
   <button type="submit" class="btn btn-primary">Save</button>
 </form>

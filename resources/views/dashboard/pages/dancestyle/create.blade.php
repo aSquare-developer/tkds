@@ -20,15 +20,15 @@
   </div>
   <div class="form-group">
     <label for="description" class="form-label">Description</label>
-    <textarea class="form-control" id="description" name="description" rows="5" placeholder="Teacher description" required></textarea>
+    <textarea class="form-control" id="description" name="description" rows="5" placeholder="Teacher description"></textarea>
   </div>
   <div class="form-group">
     <label for="dancestyle_description" class="form-label">Dancestyle description</label>
-    <textarea class="form-control" id="dancestyle_description" name="dancestyle_description" rows="5" placeholder="Dancestyle description" required></textarea>
+    <textarea class="form-control" id="dancestyle_description" name="dancestyle_description" rows="5" placeholder="Dancestyle description"></textarea>
   </div>
   <div class="form-group">
     <label for="youtube_link" class="form-label">Youtube link</label>
-    <textarea class="form-control" id="youtube_link" name="youtube_link" rows="5" placeholder="Youtube link, check currect form" required></textarea>
+    <textarea class="form-control" id="youtube_link" name="youtube_link" rows="5" placeholder="Youtube link, check currect form"></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Create</button>
 </form>

@@ -30,6 +30,13 @@
       </li>
 
       <li class="nav-item">
+        <a class="nav-link {{ (request()->segment(2) == 'timetable') ? 'active' : '' }}" href="{{ route('dashboard-timetable') }}">
+          <span data-feather="list"></span>
+          Timetable page
+        </a>
+      </li>
+
+      <li class="nav-item">
         <a class="nav-link {{ (request()->segment(2) == 'tasks') ? 'active' : '' }}" href="{{ route('dashboard-tasks') }}">
           <span data-feather="list"></span>
           Tasks

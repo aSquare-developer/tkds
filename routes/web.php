@@ -12,6 +12,7 @@ use App\Http\Controllers\TaskListController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\DancestyleController;
 use App\Http\Controllers\RentPageController;
+use App\Http\Controllers\TimetableController;
 
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
@@ -76,4 +77,12 @@ Route::middleware(['auth'])->group(function () {
   // Dashboard Rent page Section
   Route::get('/dashboard/rent', [RentPageController::class, 'index'])->name('dashboard-rent');
   Route::post('/dashboard/rent/store', [RentPageController::class, 'store'])->name('dashboard-rent-store');
+
+  // Dashboard Timetable page Section
+  Route::get('/dashboard/timetable', [TimetableController::class, 'index'])->name('dashboard-timetable');
+  Route::get('/dashboard/timetable/create', [TimetableController::class, 'create'])->name('dashboard-timetable-create');
+  Route::post('/dashboard/timetable/store', [TimetableController::class, 'store'])->name('dashboard-timetable-store');
+  Route::get('/dashboard/timetable/{id}/edit', [TimetableController::class, 'edit'])->name('dashboard-timetable-edit');
+  Route::post('/dashboard/timetable/{id}/update', [TimetableController::class, 'update'])->name('dashboard-timetable-update');
+  Route::get('/dashboard/timetable/{id}/delete', [TimetableController::class, 'delete'])->name('dashboard-timetable-delete');
 });

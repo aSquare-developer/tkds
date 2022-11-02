@@ -39,3 +39,10 @@
     });
   });
 </script>
+
+<script type="text/javascript">
+  function getRandomColor() {
+    $arrayOfColor = ['bg-sky', 'bg-green', 'bg-yellow', 'bg-purple'];
+    return $arrayOfColor.random();
+  }
+</script>

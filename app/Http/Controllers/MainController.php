@@ -10,6 +10,7 @@ use App\Models\RegisterNewStudent;
 use App\Models\RegisterTrialTraining;
 use App\Models\Dancestyle;
 use App\Models\Header;
+use App\Models\Timetable;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -17,9 +18,10 @@ use Illuminate\Support\Facades\Mail;
 class MainController extends Controller
 {
     public function index() {
+      $arrayOflessons = Timetable::getDataOfLessons();
       $dancestyles = Dancestyle::all();
       $header = Header::find(1);
-      return view('pages.index', compact('dancestyles', 'header'));
+      return view('pages.index', compact('dancestyles', 'header', 'arrayOflessons'));
     }
 
     public function registerForLessons(Request $req) {

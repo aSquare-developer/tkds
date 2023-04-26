@@ -12,12 +12,12 @@
           <div class="row">
             <div class="col-md-6">
               <div class="md-form mb-3">
-                <input type="text" id="contact-name" name="name" class="form-control" placeholder="Nimi" required>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="Nimi" value="{{ old('name') }}" required>
               </div>
             </div>
             <div class="col-md-6">
               <div class="md-form mb-3">
-                <input type="email" id="contact-email" name="email" class="form-control" placeholder="E-post" required>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="E-post" value="{{ old('email') }}" required>
               </div>
             </div>
           </div>
@@ -31,10 +31,18 @@
                   name="message"
                   rows="3"
                   placeholder="{{ (request()->segment(1) == 'rent') ? 'Palun täpsustage mis saali soovite, mis päeval, ajavahemikul ja kui palju inimesi?' : 'Sinu sõnum' }}"
-                  required></textarea>
+                  required>{{ old('message') }}</textarea>
               </div>
             </div>
           </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-form mb-3">
+                        <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                    </div>
+                </div>
+            </div>
 
           <div class="text-center text-md-left">
             <button type="submit" class="btn btn-outline-success">Saada</button>

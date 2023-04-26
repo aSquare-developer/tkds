@@ -9,3 +9,9 @@
   {{ session()->get('delete') }}
 </div>
 @endif
+
+@if ($errors->has('g-recaptcha-response'))
+<div class="alert alert-danger" role="alert">
+    reCaptcha on nõutav väli
+</div>
+@endif

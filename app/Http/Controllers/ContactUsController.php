@@ -8,25 +8,35 @@ use Illuminate\Http\Request;
 use App\Models\ContactUs;
 use Illuminate\Support\Facades\Mail;
 
+use App\Rules\ReCaptcha;
+
 class ContactUsController extends Controller
 {
-    public function sendMessage(Request $req) {
-      ContactUs::create([
-        'name' => $req->name,
-        'email' => $req->email,
-        'message' => $req->message
-      ]);
+    public function sendMessage(Request $request) {
 
-      // Create a data for email
-      $ContactUsMailData = [
-        'name' => $req->name,
-        'email' => $req->email,
-        'message' => $req->message
-      ];
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required',
+            'g-recaptcha-response' => ['required', new ReCaptcha]
+        ]);
 
-      // Send email with data
-      Mail::to("info@tkds.ee")->send(new ContactUsMail($ContactUsMailData));
+        ContactUs::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message
+        ]);
 
-      return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');
+        // Create a data for email
+        $ContactUsMailData = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message
+        ];
+
+        // Send email with data
+        Mail::to("info@tkds.ee")->send(new ContactUsMail($ContactUsMailData));
+
+        return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');
     }
 }

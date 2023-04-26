@@ -113,7 +113,6 @@
       </div>
       <div class="modal-body">
         <p>
-          1H X NÄDALAS / KUU - 42€ <br />
           1.5H X NÄDALAS / KUU - 50€ <br />
           2H X NÄDALAS / KUU - 55€ <br />
           3H X NÄDALAS / KUU - 60€
@@ -122,7 +121,6 @@
           <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
         </p>
         <p>
-          Kui trenn toimub üks kord nädalas ning kestab üks tund kord, siis kuumakse on 42€<br />
           Kui trenn toimub üks kord nädalas ning kestab poolteist tundi kord, siis on 50€<br />
           Kui trenn toimub kaks korda nädalas ning kestab üks tund kord, siis kuumakse on 55€<br />
           Kui trenn toimub kaks korda nädalas ning kestab poolteist tundi kord, siis kuumakse on 60€

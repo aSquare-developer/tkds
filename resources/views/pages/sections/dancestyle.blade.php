@@ -40,10 +40,11 @@
           <p>{{ $dancestyle->dancestyle_description }}</p>
           <p>{{ $dancestyle->description }}</p>
 
-            <div class="embed-responsive embed-responsive-16by9">
-              {!! $dancestyle->youtube_link !!}
-            </div>
-
+              @if(!($dancestyle->youtube_link == NULL))
+                <div class="embed-responsive embed-responsive-16by9">
+                  {!! $dancestyle->youtube_link !!}
+                </div>
+            @endif
         </div>
       </div>
     </div>

@@ -15,6 +15,8 @@ use App\Models\Timetable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
+use App\Rules\ReCaptcha;
+
 class MainController extends Controller
 {
     public function index() {
@@ -24,36 +26,54 @@ class MainController extends Controller
       return view('pages.index', compact('dancestyles', 'header', 'arrayOflessons'));
     }
 
-    public function registerForLessons(Request $req) {
+    public function registerForLessonsPage() {
+        return view('pages.registerForLesson');
+    }
 
-      // Create a record in database of new student
-      RegisterNewStudent::create([
-        'fullname' => $req->fullname,
-        'aeg' => $req->aeg,
-        'dancestyles' => $req->dancestyle,
-        'email' => $req->email
-      ]);
+    public function registerForLessons(Request $request) {
 
-      // Create a data for email
-      $mailData = [
-        "fullname" => $req->fullname,
-        "aeg" => $req->aeg,
-        "dancestyle" => $req->dancestyle,
-        "email" => $req->email
-      ];
+        // Validate the form
+        $request->validate([
+            'g-recaptcha-response' => ['required', new ReCaptcha]
+        ]);
 
-      // Send email with data
-      Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
+        // Create a record in database of new student
+        RegisterNewStudent::create([
+            'fullname' => $request->fullname,
+            'aeg' => $request->aeg,
+            'dancestyles' => $request->dancestyle,
+            'email' => $request->email
+        ]);
 
-      // Send notification email to new student
-      Mail::to($req->email)->send(new NewStudentNotificationEmail());
+        // Create a data for email
+        $mailData = [
+            "fullname" => $request->fullname,
+            "aeg" => $request->aeg,
+            "dancestyle" => $request->dancestyle,
+            "email" => $request->email
+        ];
 
-      // Redirect back to home page with success message
-      return redirect()->back()->with('success', 'Teie sõnum on edukalt saadetud.');
+        // Send email with data
+        Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
+
+        // Send notification email to new student
+        Mail::to($request->email)->send(new NewStudentNotificationEmail());
+
+        // Redirect back to home page with success message
+        return redirect()->route('home')->with('success', 'Teie sõnum on edukalt saadetud.');
 
     }
 
+    public function registerForTrialTrainingPage() {
+        return view('pages.registerForTrialTraining');
+    }
+
     public function registerForTrialTraining(Request $request) {
+
+        $request->validate([
+            'g-recaptcha-response' => ['required', new ReCaptcha]
+        ]);
+        
       // Create a record in database of new student
       RegisterTrialTraining::create([
         'fullname' => $request->fullname,
@@ -74,6 +94,6 @@ class MainController extends Controller
       Mail::to("info@tkds.ee")->send(new RegisterForTrialTrainingEmail($mailData));
 
       // Redirect back to home page with success message
-      return redirect()->back()->with('success', 'Täname registreerimise eest!');
+      return redirect()->route('home')->with('success', 'Täname registreerimise eest!');
     }
 }

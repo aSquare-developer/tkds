@@ -1,12 +1,10 @@
 @extends('dashboard.layout')
 
-@section('title', config('app.name') . ' ' . 'Dashboard page')
+@php $header = 'Dashboard' @endphp
 
-@section('content-title') <h1 class="h2">Dashboard</h1> @endsection
-
+@section('title', config('app.name') . ' ' . $header .' page')
+@section('page-header'){{ $header }}@endsection
 
 @section('content')
-
-<p>Here is dashboard index page.</p>
-
+    <p>Here is dashboard index page.</p>
 @endsection

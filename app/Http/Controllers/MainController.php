@@ -33,9 +33,9 @@ class MainController extends Controller
     public function registerForLessons(Request $request) {
 
         // Validate the form
-        $request->validate([
-            'g-recaptcha-response' => ['required', new ReCaptcha]
-        ]);
+//        $request->validate([
+//            'g-recaptcha-response' => ['required', new ReCaptcha]
+//        ]);
 
         // Create a record in database of new student
         RegisterNewStudent::create([
@@ -70,10 +70,10 @@ class MainController extends Controller
 
     public function registerForTrialTraining(Request $request) {
 
-        $request->validate([
-            'g-recaptcha-response' => ['required', new ReCaptcha]
-        ]);
-        
+//        $request->validate([
+//            'g-recaptcha-response' => ['required', new ReCaptcha]
+//        ]);
+
       // Create a record in database of new student
       RegisterTrialTraining::create([
         'fullname' => $request->fullname,

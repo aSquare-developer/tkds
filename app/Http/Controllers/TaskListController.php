@@ -8,10 +8,16 @@ use App\Models\Task;
 
 class TaskListController extends Controller
 {
-  public function index() {
-    $tasks = Task::All()->sortByDesc('updated_at');
-    return view('dashboard.pages.task.index', compact('tasks'));
-  }
+    public function index() {
+        $tasks = Task::where('status', 0)->orWhere('status', 1)->get();
+        $tasks = $tasks->sortByDesc('updated_at');
+        return view('dashboard.pages.task.index', compact('tasks'));
+    }
+
+    public function completed() {
+        $tasks = Task::All()->where('status', 'LIKE', 2 )->sortByDesc('updated_at');
+        return view('dashboard.pages.task.completed', compact('tasks'));
+    }
 
   public function create() {
     return view('dashboard.pages.task.create');
@@ -33,7 +39,7 @@ class TaskListController extends Controller
 
   public function update(Request $request, $id) {
     $task = Task::find($id);
-    $result = $task->updateTask($request->name, $request->description);
+    $result = $task->updateTask(trim($request->name), trim($request->description));
 
     if($result) {
       return redirect()->route('dashboard-tasks')->with('success', 'Your task was changed!');
@@ -49,7 +55,7 @@ class TaskListController extends Controller
 
   public function delete($id) {
     Task::destroy($id);
-    return redirect()->route('dashboard-tasks')->with('delete', 'Your task was deleted successfully.');
+    return redirect()->route('dashboard-tasks')->with('success', 'Your task was deleted successfully.');
   }
 
   public function changeStatus(Request $request, $id) {

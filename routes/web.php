@@ -11,6 +11,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TaskListController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\DancestyleController;
+use App\Http\Controllers\Dashboard\RequestController;
 use App\Http\Controllers\RentPageController;
 use App\Http\Controllers\TimetableController;
 
@@ -64,6 +65,9 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/dashboard/task/{id}/edit', [TaskListController::class, 'edit'])->name('dashboard-task-edit');
   Route::post('/dashboard/task/{id}/update', [TaskListController::class, 'update'])->name('dashboard-task-update');
   Route::get('/dashboard/task/{id}/delete', [TaskListController::class, 'delete'])->name('dashboard-task-delete');
+
+  // Dashboard Request Section
+  Route::get('dashboard/requests', [RequestController::class, 'index'])->name('dashboard-request');
 
   // Dashboard Main page section
   Route::get('/dashboard/header', [HeaderController::class, 'index'])->name('dashboard-header');

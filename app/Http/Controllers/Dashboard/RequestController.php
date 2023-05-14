@@ -94,6 +94,7 @@ class RequestController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Requests::destroy($id);
+        return redirect()->route('dashboard-request')->with('success', 'Your request was deleted successfully.');
     }
 }

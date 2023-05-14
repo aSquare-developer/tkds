@@ -15,9 +15,6 @@
         <div class="mt-4 sm:mt-0 sm:flex-none">
             <a href="{{ route('dashboard-request-completed') }}" class="block rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 ">Completed Requests</a>
         </div>
-        <div class="mt-4 sm:mt-0 sm:flex-none">
-            <a href="" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">New Requests</a>
-        </div>
     </div>
 
 @if($requests->count() > 0)
@@ -63,8 +60,7 @@
                                         @include('dashboard.pages.request.status.template', ['object' => $request])
                                     </td>
                                     <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm space-x-4 font-medium sm:pr-6">
-                                        <a href="" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                        <a href="" class="text-red-600 hover:text-red-900">Delete</a>
+                                        <a href="{{ route('dashboard-request-destroy', $request->id) }}" class="text-red-600 hover:text-red-900">Delete</a>
                                     </td>
                                 </tr>
 

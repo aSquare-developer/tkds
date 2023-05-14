@@ -60,8 +60,7 @@
                                         @include('dashboard.pages.request.status.template', ['object' => $request])
                                     </td>
                                     <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm space-x-4 font-medium sm:pr-6">
-                                        <a href="" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                        <a href="" class="text-red-600 hover:text-red-900">Delete</a>
+                                        <a href="{{ route('dashboard-request-destroy', $request->id) }}" class="text-red-600 hover:text-red-900">Delete</a>
                                     </td>
                                 </tr>
 

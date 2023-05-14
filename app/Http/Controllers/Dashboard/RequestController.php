@@ -16,7 +16,7 @@ class RequestController extends Controller
      */
     public function index()
     {
-        $requests = Requests::all();
+        $requests = Requests::where('status', 'LIKE', 0)->get();
         return view('dashboard.pages.request.index', compact('requests'));
     }
 
@@ -27,7 +27,18 @@ class RequestController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.pages.request.create');
+    }
+
+    /**
+     * Show the page for completed requests.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function completed()
+    {
+        $completedRequests = Requests::where('status', 'LIKE', 2)->get();
+        return view('dashboard.pages.request.completed', compact('completedRequests'));
     }
 
     /**

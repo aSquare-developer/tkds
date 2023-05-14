@@ -68,6 +68,8 @@ Route::middleware(['auth'])->group(function () {
 
   // Dashboard Request Section
   Route::get('dashboard/requests', [RequestController::class, 'index'])->name('dashboard-request');
+  Route::get('dashboard/requests/create', [RequestController::class, 'create'])->name('dashboard-request-create');
+  Route::get('dashboard/requests/completed', [RequestController::class, 'completed'])->name('dashboard-request-completed');
 
   // Dashboard Main page section
   Route::get('/dashboard/header', [HeaderController::class, 'index'])->name('dashboard-header');

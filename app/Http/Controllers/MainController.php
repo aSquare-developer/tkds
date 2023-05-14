@@ -6,6 +6,7 @@ use App\Mail\RegisterForLessonsEmail;
 use App\Mail\NewStudentNotificationEmail;
 use App\Mail\RegisterForTrialTrainingEmail;
 
+use App\Models\Dashboard\Requests;
 use App\Models\RegisterNewStudent;
 use App\Models\RegisterTrialTraining;
 use App\Models\Dancestyle;
@@ -32,15 +33,22 @@ class MainController extends Controller
 
     public function registerForLessons(Request $request) {
 
-        // Validate the form
+        // Validate the form [RECAPTCHA]
 //        $request->validate([
 //            'g-recaptcha-response' => ['required', new ReCaptcha]
 //        ]);
 
+        Requests::create([
+            'fullname' => $request->fullname,
+            'age' => $request->aeg,
+            'dancestyles' => $request->dancestyle,
+            'email' => $request->email,
+        ]);
+
         // Create a record in database of new student
         RegisterNewStudent::create([
             'fullname' => $request->fullname,
-            'aeg' => $request->aeg,
+            'aeg' => $request->aeg, // TODO: AEG BULLSHIT!!!
             'dancestyles' => $request->dancestyle,
             'email' => $request->email
         ]);
@@ -48,16 +56,16 @@ class MainController extends Controller
         // Create a data for email
         $mailData = [
             "fullname" => $request->fullname,
-            "aeg" => $request->aeg,
+            "age" => $request->age,
             "dancestyle" => $request->dancestyle,
             "email" => $request->email
         ];
 
         // Send email with data
-        Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
+        //Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
 
         // Send notification email to new student
-        Mail::to($request->email)->send(new NewStudentNotificationEmail());
+        //Mail::to($request->email)->send(new NewStudentNotificationEmail());
 
         // Redirect back to home page with success message
         return redirect()->route('home')->with('success', 'Teie sõnum on edukalt saadetud.');

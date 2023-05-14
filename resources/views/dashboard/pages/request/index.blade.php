@@ -7,20 +7,20 @@
 
 @section('content')
 
-@if($requests->count() > 0)
-
     <div class="mb-3 sm:flex sm:items-center space-x-4">
         <div class="sm:flex-auto">
             <h1 class="text-base font-semibold leading-6 text-gray-900">Requests</h1>
             <p class="mt-2 text-sm text-gray-700">Here you can find new request for new students</p>
         </div>
         <div class="mt-4 sm:mt-0 sm:flex-none">
-            <a href="" class="block rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 ">Completed Requests</a>
+            <a href="{{ route('dashboard-request-completed') }}" class="block rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 ">Completed Requests</a>
         </div>
         <div class="mt-4 sm:mt-0 sm:flex-none">
             <a href="" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">New Requests</a>
         </div>
     </div>
+
+@if($requests->count() > 0)
 
     @include('dashboard.includes.message')
 
@@ -32,8 +32,9 @@
                         <thead class="bg-gray-50">
                         <tr>
                             <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Name</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Description</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Created/Updated</th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Age</th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Dancestyles</th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Email</th>
                             <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Status</th>
                             <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
                                 <span class="sr-only">Edit</span>
@@ -41,22 +42,25 @@
                         </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200 bg-white">
-                        @foreach($requests as $request)
 
+                        @foreach($requests as $request)
                                 <tr>
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-blue-600 sm:pl-6 hover:underline">
-                                        <a href="{{ route('dashboard-task-show', $task->id) }}">
-                                            Name test
+                                        <a href="#">
+                                            {{ $request->fullname }}
                                         </a>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        Description
+                                        {{ $request->age }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        date format
+                                        {{ $request->dancestyles }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        @include('dashboard.pages.task.status.template')
+                                        {{ $request->email }}
+                                    </td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                        @include('dashboard.pages.request.status.template', ['object' => $request])
                                     </td>
                                     <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm space-x-4 font-medium sm:pr-6">
                                         <a href="" class="text-indigo-600 hover:text-indigo-900">Edit</a>

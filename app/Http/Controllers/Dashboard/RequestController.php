@@ -60,7 +60,8 @@ class RequestController extends Controller
      */
     public function show($id)
     {
-        //
+        $request = Requests::find($id);
+        return view('dashboard.pages.request.show', compact('request'));
     }
 
     /**

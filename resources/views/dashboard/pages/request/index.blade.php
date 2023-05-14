@@ -43,7 +43,7 @@
                         @foreach($requests as $request)
                                 <tr>
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-blue-600 sm:pl-6 hover:underline">
-                                        <a href="#">
+                                        <a href="{{ route('dashboard-request-show', $request->id) }}">
                                             {{ $request->fullname }}
                                         </a>
                                     </td>

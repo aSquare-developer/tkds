@@ -72,6 +72,7 @@ Route::middleware(['auth'])->group(function () {
   Route::get('dashboard/requests/completed', [RequestController::class, 'completed'])->name('dashboard-request-completed');
   Route::get('dashboard/requests/{id}', [RequestController::class, 'show'])->name('dashboard-request-show');
   Route::get('dashboard/requests/delete/{id}', [RequestController::class, 'destroy'])->name('dashboard-request-destroy');
+  Route::get('dashboard/requests/{id}/sendContract/{fileId}', [RequestController::class, 'sendContract'])->name('dashboard-request-sendContract');
 
   // Dashboard Main page section
   Route::get('/dashboard/header', [HeaderController::class, 'index'])->name('dashboard-header');

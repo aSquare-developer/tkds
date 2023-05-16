@@ -29,12 +29,8 @@ class RegisterForLessonsEmail extends Mailable
      * @return $this
      */
     public function build() {
-      $fullname = $this->mailData['fullname'];
-      $fromAddres = $this->mailData['email'];
-
       return $this
                 ->from('info@tkds.ee', 'TKDS')
-                ->replyTo($fromAddres, $fullname)
                 ->subject('Uue õpilase registreerimine')
                 ->view('email.register-new-student');
     }

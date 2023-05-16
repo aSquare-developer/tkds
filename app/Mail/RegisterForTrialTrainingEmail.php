@@ -30,14 +30,10 @@ class RegisterForTrialTrainingEmail extends Mailable
      */
     public function build()
     {
-
-      $fullname = $this->mailData['fullname'];
-      $fromAddres = $this->mailData['email'];
-
         return $this
                 ->subject('Proovitrennile registreerimine')
                 ->from('info@tkds.ee', 'TKDS')
-                ->replyTo($fromAddres, $fullname)
-                ->view('email.trial-training');
+                ->view('email.trial-training')
+                ->attachFromStorage('', 'tkds_leping_TT.pdf');
     }
 }

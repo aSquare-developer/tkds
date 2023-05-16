@@ -2,16 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Registreerimine uue õpilase</title>
+    <title>New student registration notification</title>
   </head>
   <body>
-    <h1>Uus õpilane soovib registreerida trennidesse.</h1>
+    <h1>This letter confirms the sending of a letter to the client with the following data:</h1>
 
-    <p>Ees ja perekonnanimi: {{ $mailData['fullname'] }}</p>
-    <p>Vanus: {{ $mailData['aeg'] }}</p>
-    <p>Tantsustiilid: {{ $mailData['dancestyle'] }}</p>
-    <p>E-post: {{ $mailData['email'] }}</p>
+    <p>First and Last name of student: {{ $mailData['fullname'] }}</p>
+    <p>Age: {{ $mailData['age'] }}</p>
+    <p>Dance styles: {{ $mailData['dancestyles'] }}</p>
+    <p>Email: {{ $mailData['email'] }}</p>
 
-    <p>See sõnum on saadetud lehelt www.tkds.ee</p>
+    <p>You sent to him contract like: {{ asset('storage/tkds_leping_tkd.pdf') }}</p>
   </body>
 </html>

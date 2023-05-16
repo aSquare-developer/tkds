@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class NewStudentNotificationEmail extends Mailable
+class NewStudentNotificationForTrialEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -21,7 +21,7 @@ class NewStudentNotificationEmail extends Mailable
             ->from('info@tkds.ee', 'TKDS')
             ->subject('Registreerimise kinnitus')
             ->view('email.new-student-notification')
-            ->attachFromStorage('', 'tkds_leping_tkd.pdf');
+            ->attachFromStorage('', 'tkds_leping_TT.pdf');
 
     }
 

@@ -3,9 +3,14 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Mail\NewStudentNotificationEmail;
+use App\Mail\NewStudentNotificationForTrialEmail;
+use App\Mail\RegisterForLessonsEmail;
+use App\Mail\RegisterForTrialTrainingEmail;
 use Illuminate\Http\Request;
 
 use App\Models\Dashboard\Requests;
+use Illuminate\Support\Facades\Mail;
 
 class RequestController extends Controller
 {
@@ -37,10 +42,42 @@ class RequestController extends Controller
 
     public function sendContract($id, $fileId)
     {
+        // Get data about our request
+        $request = Requests::find($id);
+
+        // Create a data for email
+        $mailData = [
+            "fullname" => $request->fullname,
+            "age" => $request->age,
+            "dancestyles" => $request->dancestyle,
+            "email" => $request->email
+        ];
+
         if($fileId == 1) {
-            return "Send First file";
+            // Send notification to admin
+            Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
+
+            // Send Email for customer
+            Mail::to($request->email)->send(new NewStudentNotificationEmail());
+
+            // Change request status
+            Requests::where('id', $request->id)->update(['status' => 2]);
+
+            // Redirect back with message
+            return redirect()->route('dashboard-request')->with('success', 'Your request has been processed!');
+
         } else if ($fileId == 2) {
-            return "Send Second file";
+            // Send notification to admin
+            Mail::to('info@tkds.ee')->send(new RegisterForTrialTrainingEmail($mailData));
+
+            // Send Email for customer
+            Mail::to($request->email)->send(new NewStudentNotificationForTrialEmail());
+
+            // Change request status
+            Requests::where('id', $request->id)->update(['status' => 2]);
+
+            // Redirect back with message
+            return redirect()->route('dashboard-request')->with('success', 'Your request has been processed!');
         } else {
             return redirect()->back()->with('delete', 'Something happened wrong.');
         }

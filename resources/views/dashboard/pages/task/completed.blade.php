@@ -53,7 +53,7 @@
                                         {{ $task->created_at->format('d M Y H:i') }} / {{ $task->updated_at->format('d M Y H:i') }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        @include('dashboard.pages.task.status.template')
+                                        @include('dashboard.pages.task.status.template', ['object' => $task])
                                     </td>
                                     <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm space-x-4 font-medium sm:pr-6">
                                         <a href="{{ route('dashboard-task-edit', $task->id) }}" class="text-indigo-600 hover:text-indigo-900">Edit</a>

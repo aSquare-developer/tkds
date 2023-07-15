@@ -19,7 +19,7 @@ class RentPageController extends Controller
       $result = $rent_page->editRentPageWith(
         $req->title,
         $req->video_url,
-        $req->content
+//        $req->content
       );
 
       if($result) {

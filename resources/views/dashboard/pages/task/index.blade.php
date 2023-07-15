@@ -7,8 +7,6 @@
 
 @section('content')
 
-@if($tasks->count() > 0)
-
     <div class="mb-3 sm:flex sm:items-center space-x-4">
         <div class="sm:flex-auto">
             <h1 class="text-base font-semibold leading-6 text-gray-900">Tasks</h1>
@@ -23,6 +21,8 @@
     </div>
 
     @include('dashboard.includes.message')
+
+    @if($tasks->count() > 0)
 
     <div class="mt-3 flow-root">
         <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">

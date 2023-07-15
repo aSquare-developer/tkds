@@ -4,6 +4,8 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\DancestyleController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\RequestController;
+use App\Http\Controllers\Dashboard\TaskListController;
+use App\Http\Controllers\Dashboard\TimetableController;
 use App\Http\Controllers\HallBookingController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\LoginController;
@@ -12,8 +14,6 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\PriceListController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\RentPageController;
-use App\Http\Controllers\TaskListController;
-use App\Http\Controllers\TimetableController;
 use Illuminate\Support\Facades\Route;
 
 /*

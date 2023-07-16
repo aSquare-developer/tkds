@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Models\Task;
+use App\Models\Dashboard\Task;
 use Illuminate\Http\Request;
 
 class TaskListController extends Controller

@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Dashboard;
 use App\Http\Controllers\Controller;
 use App\Models\Dancestyle;
 use App\Models\Dashboard\Requests;
-use App\Models\Task;
-use App\Models\Timetable;
+use App\Models\Dashboard\Task;
+use App\Models\Dashboard\Timetable;
 use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller

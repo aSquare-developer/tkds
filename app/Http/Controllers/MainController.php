@@ -2,21 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\RegisterForLessonsEmail;
-use App\Mail\NewStudentNotificationEmail;
 use App\Mail\RegisterForTrialTrainingEmail;
-
+use App\Models\Dancestyle;
 use App\Models\Dashboard\Requests;
+use App\Models\Dashboard\Timetable;
+use App\Models\Header;
 use App\Models\RegisterNewStudent;
 use App\Models\RegisterTrialTraining;
-use App\Models\Dancestyle;
-use App\Models\Header;
-use App\Models\Timetable;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-
-use App\Rules\ReCaptcha;
 
 class MainController extends Controller
 {

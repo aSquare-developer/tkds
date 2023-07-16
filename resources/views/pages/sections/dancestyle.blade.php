@@ -8,21 +8,21 @@
   </div>
 
   <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
+{{--  <div class="swiper mySwiper">--}}
+{{--    <div class="swiper-wrapper">--}}
 
-      @foreach($dancestyles as $dancestyle)
+{{--      @foreach($dancestyles as $dancestyle)--}}
 
-        <div class="swiper-slide">
-          <a href="#" class="glider-carousel-link" data-toggle="modal" data-target=".{{ $dancestyle->slug }}-modal-lg">
-              <img src="/swiper/{{ $dancestyle->slug }}.jpeg" class="card-img-top" alt="{{ $dancestyle->slug }}" />
-          </a>
-        </div>
+{{--        <div class="swiper-slide">--}}
+{{--          <a href="#" class="glider-carousel-link" data-toggle="modal" data-target=".{{ $dancestyle->slug }}-modal-lg">--}}
+{{--              <img src="/swiper/{{ $dancestyle->slug }}.jpeg" class="card-img-top" alt="{{ $dancestyle->slug }}" />--}}
+{{--          </a>--}}
+{{--        </div>--}}
 
-      @endforeach
+{{--      @endforeach--}}
 
-    </div>
-  </div>
+{{--    </div>--}}
+{{--  </div>--}}
 
   <!-- Modal for Dancehall-->
   @foreach($dancestyles as $dancestyle)

@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\Dashboard\DancestyleController;
 use App\Http\Controllers\Dashboard\DashboardController;
@@ -8,11 +11,8 @@ use App\Http\Controllers\Dashboard\TaskListController;
 use App\Http\Controllers\Dashboard\TimetableController;
 use App\Http\Controllers\HallBookingController;
 use App\Http\Controllers\HeaderController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PriceListController;
-use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\RentPageController;
 use Illuminate\Support\Facades\Route;
 

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Models\Timetable;
+use App\Models\Dashboard\Timetable;
 use Illuminate\Http\Request;
 
 class TimetableController extends Controller

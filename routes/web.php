@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactUsController;
-use App\Http\Controllers\DancestyleController;
+use App\Http\Controllers\Dashboard\DancestyleController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\RequestController;
 use App\Http\Controllers\Dashboard\TaskListController;

@@ -13,15 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-      Schema::create('dancestyles', function (Blueprint $table) {
-          $table->id();
-          $table->string('name');
-          $table->string('slug');
-          $table->longtext('description');
-          $table->longtext('dancestyle_description');
-          $table->string('youtube_link');
-          $table->timestamps();
-      });
+        Schema::create('dancestyles', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('slug');
+            $table->text('description');
+            $table->timestamps();
+        });
     }
 
     /**

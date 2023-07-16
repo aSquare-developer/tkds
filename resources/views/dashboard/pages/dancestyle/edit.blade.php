@@ -1,40 +1,54 @@
 @extends('dashboard.layout')
 
-@section('title', config('app.name') . ' ' . 'Dancestyle page')
+@php $header = 'Dance styles' @endphp
 
-@section('content-title')
-<h1 class="h2">{{ $dancestyle->name }}</h1>
-  <div class="btn-toolbar mb-2 mb-md-0">
-    <div class="form-group mr-2">
-      <a href="{{ route('dashboard-dancestyle') }}" class="btn btn-sm btn-outline-success">Back</a>
-    </div>
-  </div>
-@endsection
+@section('title', config('app.name') . ' ' . $header .' page')
+@section('page-header') {{ $header }} @endsection
 
 @section('content')
 
-<form action="{{ route('dashboard-dancestyle-update', $dancestyle->id) }}" method="post">@csrf
-  <div class="form-group">
-    <label for="name" class="form-label">Name</label>
-    <input type="text" class="form-control" id="name" name="name" placeholder="" value="{{ $dancestyle->name }}" required>
-  </div>
-  <div class="form-group">
-    <label for="slug" class="form-label">Slug</label>
-    <input type="text" class="form-control" id="slug" name="slug" placeholder="" value="{{ $dancestyle->slug }}" readonly>
-  </div>
-  <div class="form-group">
-    <label for="description" class="form-label">Description</label>
-    <textarea class="form-control" id="description" name="description" rows="5" placeholder="">{{ $dancestyle->description }}</textarea>
-  </div>
-  <div class="form-group">
-    <label for="dancestyle_description" class="form-label">Dancestyle description</label>
-    <textarea class="form-control" id="dancestyle_description" name="dancestyle_description" rows="5" placeholder="">{{ $dancestyle->dancestyle_description }}</textarea>
-  </div>
-  <div class="form-group">
-    <label for="youtube_link" class="form-label">Youtube link</label>
-    <textarea class="form-control" id="youtube_link" name="youtube_link" rows="5" placeholder="">{{ $dancestyle->youtube_link }}</textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Save</button>
-</form>
+    <div class="mb-3 sm:flex sm:items-center space-x-4">
+        <div class="sm:flex-auto">
+            <h1 class="text-base font-semibold leading-6 text-gray-900">Dance styles</h1>
+            <p class="mt-2 text-sm text-gray-700">Here you can edit dance style.</p>
+        </div>
+        <div class="mt-4 sm:mt-0 sm:flex-none">
+            <a href="{{ route('dashboard-dancestyle') }}" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Back</a>
+        </div>
+    </div>
+
+    @include('dashboard.includes.message')
+
+    <form class="" action="{{ route('dashboard-dancestyle-update', $dancestyle->id) }}" method="post">@csrf
+
+        <div class="mt-2">
+            <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+            <div class="mt-2">
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    value="{{ $dancestyle->name }}"
+                    class="block w-1/2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    required>
+            </div>
+        </div>
+
+        <div class="mt-2">
+            <label for="description" class="block text-sm font-semibold leading-6 text-gray-900">Description</label>
+            <div class="mt-2.5">
+                <textarea
+                    name="description"
+                    id="description"
+                    rows="4"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                >{{ $dancestyle->description }}
+                </textarea>
+            </div>
+        </div>
+
+        <button type="submit" class="mt-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Create</button>
+
+    </form>
 
 @endsection

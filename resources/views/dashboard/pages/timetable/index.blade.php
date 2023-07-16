@@ -5,16 +5,6 @@
 @section('title', config('app.name') . ' ' . $header .' page')
 @section('page-header') {{ $header }} @endsection
 
-@section('content-title')
-    <h1 class="h2">Timetable</h1>
-
-    <div class="btn-toolbar mb-2 mb-md-0">
-        <div class="btn-group mr-2">
-            <a href="{{ route('dashboard-timetable-create') }}" class="btn btn-sm btn-outline-success">Create new</a>
-        </div>
-    </div>
-@endsection
-
 @section('content')
 
     <div class="mb-3 sm:flex sm:items-center space-x-4">

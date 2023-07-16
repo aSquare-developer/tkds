@@ -18,7 +18,7 @@ class DashboardController extends Controller
       }
 
       $requestsCount = Requests::all()->count();
-      $tasksCount = Task::all()->count();
+      $tasksCount = Task::where('status', 0)->orWhere('status', 1)->count();
       $lessonsCount = Timetable::all()->count();
       $dancestylesCount = Dancestyle::all()->count();
 

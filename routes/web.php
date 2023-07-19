@@ -98,4 +98,7 @@ Route::middleware(['auth'])->group(function () {
 
   // Dashboard Teacher page Section
     Route::get('/dashboard/teachers', [TeacherController::class, 'index'])->name('dashboard-teachers');
+    Route::get('/dashboard/teachers/create', [TeacherController::class, 'create'])->name('dashboard-teachers-create');
+    Route::post('/dashboard/teachers/store', [TeacherController::class, 'store'])->name('dashboard-teachers-store');
+    Route::delete('/dashboard/teachers/{teacher}', [TeacherController::class, 'destroy'])->name('dashboard.teachers.destroy');
 });

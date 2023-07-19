@@ -10,4 +10,8 @@ class Dancestyle extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'slug', 'description'];
+
+    public function teachers() {
+        return $this->belongsToMany(Teacher::class);
+    }
 }

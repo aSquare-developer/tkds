@@ -21,7 +21,6 @@ class DancestyleController extends Controller
     public function store(Request $request) {
         Dancestyle::create([
             'name' => $request->name,
-            'slug' => Str::slug($request->name),
             'description' => trim($request->description)
         ]);
 

@@ -8,6 +8,7 @@ use App\Http\Controllers\Dashboard\DancestyleController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\RequestController;
 use App\Http\Controllers\Dashboard\TaskListController;
+use App\Http\Controllers\Dashboard\TeacherController;
 use App\Http\Controllers\Dashboard\TimetableController;
 use App\Http\Controllers\HallBookingController;
 use App\Http\Controllers\HeaderController;
@@ -94,4 +95,7 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/dashboard/timetable/{id}/edit', [TimetableController::class, 'edit'])->name('dashboard-timetable-edit');
   Route::post('/dashboard/timetable/{id}/update', [TimetableController::class, 'update'])->name('dashboard-timetable-update');
   Route::get('/dashboard/timetable/{id}/delete', [TimetableController::class, 'delete'])->name('dashboard-timetable-delete');
+
+  // Dashboard Teacher page Section
+    Route::get('/dashboard/teachers', [TeacherController::class, 'index'])->name('dashboard-teachers');
 });

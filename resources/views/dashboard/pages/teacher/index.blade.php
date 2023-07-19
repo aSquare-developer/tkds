@@ -44,7 +44,7 @@
 
                                 <tr>
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-blue-600 sm:pl-6">
-                                        <img src="{{ asset($teacher->image_url) }}" alt="{{ $teacher->name }}" class="h-16 w-16 rounded-full">
+                                        <img src="{{ \Illuminate\Support\Facades\Storage::url($teacher->image_url) }}" alt="{{ $teacher->name }}" class="h-16 w-16 rounded-full">
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         {{ $teacher->fullname }}

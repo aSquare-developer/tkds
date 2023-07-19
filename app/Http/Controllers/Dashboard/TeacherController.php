@@ -40,8 +40,7 @@ class TeacherController extends Controller
         $imageUrl = 'img/default.jpg'; // Set a default image URL if no image is uploaded
 
         if ($request->hasFile('image_url')) {
-            $imagePath = $request->file('image_url')->store('public/img');
-            $imageUrl = Storage::url($imagePath);
+            $imagePath = $request->file('image_url')->store('public/image');
         }
 
         $teacherData = $request->only([
@@ -52,7 +51,7 @@ class TeacherController extends Controller
             'youtube_link'
         ]);
 
-        $teacherData['image_url'] = $imageUrl; // Assign the image URL to the $teacherData array
+        $teacherData['image_url'] = $imagePath; // Assign the image URL to the $teacherData array
 
         $teacher = Teacher::create($teacherData);
         $teacher->dancestyles()->sync($request->input('dance_styles', []));

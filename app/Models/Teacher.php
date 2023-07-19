@@ -24,8 +24,9 @@ class Teacher extends Model
         static::deleting(function ($teacher) {
             // Check if an image is associated with the teacher
             if ($teacher->image_url) {
-                // Delete the image from the storage
-                Storage::delete('public/' . $teacher->image_url);
+                if (Storage::exists($teacher->image_url)) {
+                    Storage::delete($teacher->image_url);
+                }
             }
         });
     }

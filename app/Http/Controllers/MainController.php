@@ -76,6 +76,8 @@ class MainController extends Controller
 //            'g-recaptcha-response' => ['required', new ReCaptcha]
 //        ]);
 
+        // TODO: Разделить в отдельную таблицу, сообщение на почту(notification)
+
       // Create a record in database of new student
       RegisterTrialTraining::create([
         'fullname' => $request->fullname,

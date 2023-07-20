@@ -45,7 +45,7 @@
 
                                 <tr>
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-blue-600 sm:pl-6 hover:underline">
-                                        <a href="{{ route('dashboard-task-show', $task->id) }}">
+                                        <a href="{{ route('dashboard-task-edit', $task->id) }}">
                                             {{ $task->name }}
                                         </a>
                                     </td>

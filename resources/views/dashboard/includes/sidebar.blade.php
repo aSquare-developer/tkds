@@ -84,7 +84,7 @@
                         </li>
                         <li>
                             <a href="#"
-                               class="{{ Request::segment(2) == 'teachers' ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800' }} group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                               class="{{ Request::segment(2) == 'trial' ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800' }} group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                 <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">T</span>
                                 <span class="truncate">Trial Lessons</span>
                             </a>

@@ -7,7 +7,21 @@
 
 @section('content')
 
-    <form action="{{ route('dashboard-task-update', $task->id) }}" method="post" class="relative">@csrf
+    <div class="flex">
+        <form name="myform" action="{{ route('dashboard-task-change-status', $task->id) }}" method="post">@csrf
+            <select
+                class="block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                onchange="myform.submit()"
+                name="status"
+            >
+                <option value="0" {{ $task->status == 0 ? "selected" : "" }}>Planned</option>
+                <option value="1" {{ $task->status == 1 ? "selected" : "" }}>In progress...</option>
+                <option value="2" {{ $task->status == 2 ? "selected" : "" }}>Completed</option>
+            </select>
+        </form>
+    </div>
+
+    <form action="{{ route('dashboard-task-update', $task->id) }}" method="post" class="relative mt-2">@csrf
         <div class="overflow-hidden rounded-lg border border-gray-300 shadow-sm focus-within:border-indigo-500 focus-within:ring-1 focus-within:ring-indigo-500">
             <label for="title" class="sr-only">Title</label>
             <input
@@ -42,6 +56,7 @@
 
         <div class="absolute inset-x-px bottom-0">
             <div class="flex items-center justify-end space-x-3 border-t border-gray-200 px-2 py-2 sm:px-3">
+
                 <div class="flex">
                     <a
                         href="{{ route('dashboard-tasks') }}"

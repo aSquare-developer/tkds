@@ -44,7 +44,11 @@
 
                                 <tr>
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-blue-600 sm:pl-6">
-                                        <img src="{{ Storage::url($teacher->image_url) }}" alt="{{ $teacher->name }}" class="h-16 w-16 rounded-full">
+                                        @if(isset($teacher->image_url))
+                                            <img src="{{ Storage::url($teacher->image_url) }}" alt="{{ $teacher->name }}" class="h-16 w-16 rounded-full">
+                                        @else
+                                            <img src="{{ asset('img/default.jpeg') }}" alt="{{ $teacher->name }}" class="h-16 w-16 rounded-full">
+                                        @endif
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         {{ $teacher->fullname }}
@@ -61,23 +65,29 @@
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         <div class="flex justify-center items-center gap-2">
-                                            <a href="{{ $teacher->facebook_link }}" target="_blank">
-                                                <img src="{{ URL::asset('/img/facebook-icon.png') }}" width="28" alt="TKDS Facebook page">
-                                            </a>
-                                            <a href="{{ $teacher->youtube_link }}" target="_blank">
-                                                <img src="{{ URL::asset('/img/youtube-icon.png') }}" width="28" alt="TKDS YouTube channel">
-                                            </a>
-                                            <a href="{{ $teacher->instagram_link }}" target="_blank">
-                                                <img src="{{ URL::asset('/img/instagram-icon.png') }}" width="28" alt="TKDS Instagram">
-                                            </a>
+                                            @if(isset($teacher->facebook_link))
+                                                <a href="{{ $teacher->facebook_link }}" target="_blank">
+                                                    <img src="{{ URL::asset('/img/facebook-icon.png') }}" width="28" alt="TKDS Facebook page">
+                                                </a>
+                                            @endif
+                                            @if(isset($teacher->youtube_link))
+                                                <a href="{{ $teacher->youtube_link }}" target="_blank">
+                                                    <img src="{{ URL::asset('/img/youtube-icon.png') }}" width="28" alt="TKDS YouTube channel">
+                                                </a>
+                                            @endif
+                                            @if(isset($teacher->instagram_link))
+                                                <a href="{{ $teacher->instagram_link }}" target="_blank">
+                                                    <img src="{{ URL::asset('/img/instagram-icon.png') }}" width="28" alt="TKDS Instagram">
+                                                </a>
+                                            @endif
                                         </div>
                                     </td>
                                     <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm space-x-4 font-medium sm:pr-6">
-                                        <a href="" class="text-indigo-600 hover:text-indigo-900" role="button">Edit</a>
+                                        <a href="{{ route('dashboard.teachers.edit', $teacher->id) }}" class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600" role="button">Edit</a>
                                         <form action="{{ route('dashboard.teachers.destroy', $teacher->id) }}" method="POST" class="inline">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
+                                            <button type="submit" class="inline-flex items-center rounded-md bg-red-100 px-2 py-1 text-xs font-medium text-red-700">Delete</button>
                                         </form>
                                     </td>
                                 </tr>

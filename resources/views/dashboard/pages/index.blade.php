@@ -29,7 +29,7 @@
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 border rounded-2xl p-10">
                     <dt class="text-base leading-7 text-gray-600">Teachers</dt>
-                    <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">0</dd>
+                    <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">{{ $teachersCount }}</dd>
                 </div>
             </dl>
         </div>

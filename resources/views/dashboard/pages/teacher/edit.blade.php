@@ -10,7 +10,7 @@
     <div class="mb-3 sm:flex sm:items-center space-x-4">
         <div class="sm:flex-auto">
             <h1 class="text-base font-semibold leading-6 text-gray-900">Teachers</h1>
-            <p class="mt-2 text-sm text-gray-700">Here you can create new profile of teacher.</p>
+            <p class="mt-2 text-sm text-gray-700">Here you can modify profile of teacher.</p>
         </div>
         <div class="mt-4 sm:mt-0 sm:flex-none">
             <a href="{{ route('dashboard-teachers') }}" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
@@ -21,7 +21,7 @@
 
     @include('dashboard.includes.message')
 
-    <form class="" action="{{ route('dashboard-teachers-store') }}" method="post" enctype="multipart/form-data">@csrf
+    <form class="" action="{{ route('dashboard.teachers.update', $teacher->id) }}" method="post" enctype="multipart/form-data">@csrf
 
         <div class="mt-2">
             <label for="fullname" class="block text-sm font-medium leading-6 text-gray-900">Full name</label>
@@ -30,7 +30,7 @@
                     type="text"
                     name="fullname"
                     id="fullname"
-                    value="{{ old('fullname') }}"
+                    value="{{ $teacher->fullname }}"
                     class="block w-1/2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     required>
             </div>
@@ -44,7 +44,7 @@
                     type="file"
                     id="photo"
                     name="image_url"
-                    value="{{ old('image_url') }}"
+                    value="{{ $teacher->image_url }}"
                 />
             </div>
 
@@ -62,7 +62,7 @@
                     rows="4"
                     required
                     class="block w-1/2 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                >{{ old('description') }}</textarea>
+                >{{ $teacher->description }}</textarea>
             </div>
         </div>
 
@@ -77,7 +77,7 @@
                             name="dance_styles[]"
                             type="checkbox" value="{{ $danceStyle->id }}"
                             class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                            {{ (isset($teacher) && $teacher->danceStyles->contains($danceStyle->id)) || in_array($danceStyle->id, old('dance_styles', [])) ? 'checked' : '' }}
+                            {{ (isset($teacher) && $teacher->danceStyles->contains($danceStyle->id)) ? 'checked' : '' }}
                         >
                     </div>
                     <div class="ml-3 text-sm leading-6">
@@ -99,7 +99,7 @@
                     type="text"
                     name="instagram_link"
                     id="instagram_link"
-                    value="{{ old('instagram_link') }}"
+                    value="{{ $teacher->instagram_link }}"
                     placeholder="www.example.com"
                     class="block w-1/2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     >
@@ -113,7 +113,7 @@
                     type="text"
                     name="facebook_link"
                     id="facebook_link"
-                    value="{{ old('facebook_link') }}"
+                    value="{{ $teacher->facebook_link }}"
                     placeholder="www.example.com"
                     class="block w-1/2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     >
@@ -127,14 +127,14 @@
                     type="text"
                     name="youtube_link"
                     id="youtube_link"
-                    value="{{ old('youtube_link') }}"
+                    value="{{ $teacher->youtube_link }}"
                     placeholder="www.example.com"
                     class="block w-1/2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     >
             </div>
         </div>
 
-        <button type="submit" class="mt-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Create</button>
+        <button type="submit" class="mt-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
 
     </form>
 

@@ -100,5 +100,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard/teachers', [TeacherController::class, 'index'])->name('dashboard-teachers');
     Route::get('/dashboard/teachers/create', [TeacherController::class, 'create'])->name('dashboard-teachers-create');
     Route::post('/dashboard/teachers/store', [TeacherController::class, 'store'])->name('dashboard-teachers-store');
+    Route::get('/dashboard/teachers/{id}/edit', [TeacherController::class, 'edit'])->name('dashboard.teachers.edit');
+    Route::post('/dashboard/teachers/{id}/update', [TeacherController::class, 'update'])->name('dashboard.teachers.update');
     Route::delete('/dashboard/teachers/{teacher}', [TeacherController::class, 'destroy'])->name('dashboard.teachers.destroy');
 });

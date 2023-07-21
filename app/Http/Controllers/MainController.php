@@ -9,6 +9,7 @@ use App\Models\Dashboard\Timetable;
 use App\Models\Header;
 use App\Models\RegisterNewStudent;
 use App\Models\RegisterTrialTraining;
+use App\Models\Teacher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -18,7 +19,8 @@ class MainController extends Controller
       $arrayOflessons = Timetable::getDataOfLessons();
       $dancestyles = Dancestyle::all();
       $header = Header::find(1);
-      return view('pages.index', compact('dancestyles', 'header', 'arrayOflessons'));
+      $teachers = Teacher::all();
+      return view('pages.index', compact('dancestyles', 'header', 'arrayOflessons', 'teachers'));
     }
 
     public function registerForLessonsPage() {

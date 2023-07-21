@@ -6,9 +6,8 @@
         <p class="text-center">{{ $header->about_second }}</p>
     </div>
 
-      <p>
-          <h1>Meie meeskond</h1>
-      </p>
+      <h1>Meie meeskond</h1>
+
   </div>
 
   <!-- Swiper -->

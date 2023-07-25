@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="md-form mb-3">
-                        <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                        <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.key') }}"></div>
                     </div>
                 </div>
             </div>

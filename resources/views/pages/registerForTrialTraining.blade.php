@@ -31,7 +31,7 @@
             </div>
 
             <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.key') }}"></div>
             </div>
 
             <button type="submit" class="btn btn-outline-success">Saada</button>

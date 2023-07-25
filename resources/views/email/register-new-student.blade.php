@@ -9,9 +9,9 @@
 
     <p>First and Last name of student: {{ $mailData['fullname'] }}</p>
     <p>Age: {{ $mailData['age'] }}</p>
-    <p>Dance styles: {{ $mailData['dancestyles'] }}</p>
+    <p>Dance styles: {{ $mailData['dancestyle'] }}</p>
     <p>Email: {{ $mailData['email'] }}</p>
 
-    <p>You sent to him contract like: {{ asset('storage/tkds_leping_tkd.pdf') }}</p>
+    <p>You sent to him contract like: {{ Storage::url('storage/tkds_leping_tkd.pdf') }}</p>
   </body>
 </html>

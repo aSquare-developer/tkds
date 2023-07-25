@@ -49,7 +49,7 @@
                                     </svg>
                                     <div class="ml-4 flex min-w-0 flex-1 gap-2">
                                         <span class="truncate font-medium">
-                                            <a href="{{ asset('storage/tkds_leping_tkd.pdf') }}" target="_blank">
+                                            <a href="{{ Storage::url('public/tkds_leping_tkd.pdf') }}" target="_blank">
                                                 {{ basename('tkds_leping_tkd.pdf') }}
                                             </a>
                                         </span>
@@ -66,7 +66,7 @@
                                     </svg>
                                     <div class="ml-4 flex min-w-0 flex-1 gap-2">
                                         <span class="truncate font-medium">
-                                            <a href="{{ asset('storage/tkds_leping_TT.pdf') }}" target="_blank">
+                                            <a href="{{ Storage::url('public/tkds_leping_TT.pdf') }}" target="_blank">
                                                 {{ basename('tkds_leping_TT.pdf') }}
                                             </a>
                                         </span>

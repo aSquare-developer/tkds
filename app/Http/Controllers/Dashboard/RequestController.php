@@ -28,7 +28,7 @@ class RequestController extends Controller
      */
     public function completed()
     {
-        $completedRequests = Requests::where('status', 'LIKE', 2)->get();
+        $completedRequests = Requests::where('status', 'LIKE', 2)->orderBy('created_at')->get();
         return view('dashboard.pages.request.completed', compact('completedRequests'));
     }
 

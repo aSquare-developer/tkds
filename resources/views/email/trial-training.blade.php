@@ -8,7 +8,7 @@
     <h1>Uus õpilane soovib registreerida proovitrennile.</h1>
 
     <p>Ees ja perekonnanimi: {{ $mailData['fullname'] }}</p>
-    <p>Vanus: {{ $mailData['aeg'] }}</p>
+    <p>Vanus: {{ $mailData['age'] }}</p>
     <p>Tantsustiilid: {{ $mailData['dancestyle'] }}</p>
     <p>E-post: {{ $mailData['email'] }}</p>
 

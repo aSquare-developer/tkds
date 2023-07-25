@@ -7,6 +7,7 @@ use App\Models\Dancestyle;
 use App\Models\Dashboard\Requests;
 use App\Models\Dashboard\Task;
 use App\Models\Dashboard\Timetable;
+use App\Models\RegisterTrialTraining;
 use App\Models\Teacher;
 use Illuminate\Support\Facades\Auth;
 
@@ -23,6 +24,7 @@ class DashboardController extends Controller
       $lessonsCount = Timetable::all()->count();
       $dancestylesCount = Dancestyle::all()->count();
       $teachersCount = Teacher::all()->count();
+      $trialLessonsCount = RegisterTrialTraining::where('status', 0)->orWhere('status', 1)->count();
 
       return view('dashboard.pages.index',
           compact(
@@ -30,7 +32,8 @@ class DashboardController extends Controller
               'tasksCount',
               'lessonsCount',
               'dancestylesCount',
-              'teachersCount'
+              'teachersCount',
+              'trialLessonsCount'
           ));
     }
 }

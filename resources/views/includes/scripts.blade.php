@@ -26,25 +26,4 @@
   });
 </script>
 
-<!-- After closing modal window stop the video -->
-<script>
-  $(document).ready(function(){
-    $('.modal').each(function(){
-            var src = $(this).find('iframe').attr('src');
 
-        $(this).on('click', function(){
-
-            $(this).find('iframe').attr('src', '');
-            $(this).find('iframe').attr('src', src);
-
-        });
-    });
-  });
-</script>
-
-<script type="text/javascript">
-  function getRandomColor() {
-    $arrayOfColor = ['bg-sky', 'bg-green', 'bg-yellow', 'bg-purple'];
-    return $arrayOfColor.random();
-  }
-</script>

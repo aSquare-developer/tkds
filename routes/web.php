@@ -10,6 +10,7 @@ use App\Http\Controllers\Dashboard\RequestController;
 use App\Http\Controllers\Dashboard\TaskListController;
 use App\Http\Controllers\Dashboard\TeacherController;
 use App\Http\Controllers\Dashboard\TimetableController;
+use App\Http\Controllers\Dashboard\TrialLessonController;
 use App\Http\Controllers\HallBookingController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\MainController;
@@ -96,11 +97,17 @@ Route::middleware(['auth'])->group(function () {
   Route::post('/dashboard/timetable/{id}/update', [TimetableController::class, 'update'])->name('dashboard-timetable-update');
   Route::get('/dashboard/timetable/{id}/delete', [TimetableController::class, 'delete'])->name('dashboard-timetable-delete');
 
-  // Dashboard Teacher page Section
+    // Dashboard Teacher page Section
     Route::get('/dashboard/teachers', [TeacherController::class, 'index'])->name('dashboard-teachers');
     Route::get('/dashboard/teachers/create', [TeacherController::class, 'create'])->name('dashboard-teachers-create');
     Route::post('/dashboard/teachers/store', [TeacherController::class, 'store'])->name('dashboard-teachers-store');
     Route::get('/dashboard/teachers/{id}/edit', [TeacherController::class, 'edit'])->name('dashboard.teachers.edit');
     Route::post('/dashboard/teachers/{id}/update', [TeacherController::class, 'update'])->name('dashboard.teachers.update');
     Route::delete('/dashboard/teachers/{teacher}', [TeacherController::class, 'destroy'])->name('dashboard.teachers.destroy');
+
+    // Dashboard Trial Lessons Section
+    Route::get('/dashboard/trial-lessons', [TrialLessonController::class, 'index'])->name('dashboard.trial.lessons');
+    Route::get('/dashboard/trial-lessons/completed', [TrialLessonController::class, 'completed'])->name('dashboard.trial.lessons.completed');
+    Route::get('/dashboard/trial-lessons/{id}', [TrialLessonController::class, 'show'])->name('dashboard.trial.lessons.show');
+    Route::post('/dashboard/trial-lessons/{id}/change-status', [TrialLessonController::class, 'changeStatus'])->name('dashboard.trial.lessons.change.status');
 });

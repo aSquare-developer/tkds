@@ -32,7 +32,7 @@
                                 <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Age</th>
                                 <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Dance style</th>
                                 <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Email</th>
-                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Created / Updated</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Created</th>
                                 <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
                                     <span class="sr-only">Edit</span>
                                 </th>
@@ -51,13 +51,13 @@
                                         {{ $object->age }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        {{ $object->dancestyles }}
+                                        {{ Str::limit($object->dancestyles, 20) }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-blue-600 hover:underline">
                                         <a href = "mailto: {{ $object->email }}">{{ $object->email }}</a>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        {{ $object->created_at->format('d M Y H:i') }} / {{ $object->updated_at->format('d M Y H:i') }}
+                                        {{ $object->created_at->format('d M Y H:i') }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         @include('dashboard.pages.task.status.template', ['object' => $object])

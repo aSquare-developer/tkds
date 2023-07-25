@@ -19,7 +19,7 @@ class DashboardController extends Controller
           return redirect()->route('sign-in-page');
       }
 
-      $requestsCount = Requests::all()->count();
+      $requestsCount = Requests::where('status', 0)->orWhere('status', 1)->count();
       $tasksCount = Task::where('status', 0)->orWhere('status', 1)->count();
       $lessonsCount = Timetable::all()->count();
       $dancestylesCount = Dancestyle::all()->count();

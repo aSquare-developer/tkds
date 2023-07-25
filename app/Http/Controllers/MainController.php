@@ -36,7 +36,7 @@ class MainController extends Controller
 
         Requests::create([
             'fullname' => $request->fullname,
-            'age' => $request->aeg,
+            'age' => $request->age,
             'dancestyles' => $request->dancestyle,
             'email' => $request->email,
         ]);
@@ -44,7 +44,7 @@ class MainController extends Controller
         // Create a record in database of new student
         RegisterNewStudent::create([
             'fullname' => $request->fullname,
-            'aeg' => $request->aeg, // TODO: AEG BULLSHIT!!!
+            'age' => $request->age,
             'dancestyles' => $request->dancestyle,
             'email' => $request->email
         ]);
@@ -78,12 +78,10 @@ class MainController extends Controller
 //            'g-recaptcha-response' => ['required', new ReCaptcha]
 //        ]);
 
-        // TODO: Разделить в отдельную таблицу, сообщение на почту(notification)
-
       // Create a record in database of new student
       RegisterTrialTraining::create([
         'fullname' => $request->fullname,
-        'aeg' => $request->aeg,
+        'age' => $request->age,
         'dancestyles' => $request->dancestyle,
         'email' => $request->email
       ]);
@@ -91,13 +89,13 @@ class MainController extends Controller
       // Create a data for email
       $mailData = [
         "fullname" => $request->fullname,
-        "aeg" => $request->aeg,
+        "age" => $request->age,
         "dancestyle" => $request->dancestyle,
         "email" => $request->email
       ];
 
       // Send email with data
-      Mail::to("info@tkds.ee")->send(new RegisterForTrialTrainingEmail($mailData));
+//      Mail::to("info@tkds.ee")->send(new RegisterForTrialTrainingEmail($mailData));
 
       // Redirect back to home page with success message
       return redirect()->route('home')->with('success', 'Täname registreerimise eest!');

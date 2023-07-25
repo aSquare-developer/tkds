@@ -43,7 +43,7 @@
                         @foreach($completedRequests as $request)
                                 <tr>
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-blue-600 sm:pl-6 hover:underline">
-                                        <a href="#">
+                                        <a href="{{ route('dashboard-request-show', $request->id) }}">
                                             {{ $request->fullname }}
                                         </a>
                                     </td>
@@ -51,7 +51,7 @@
                                         {{ $request->age }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        {{ $request->dancestyles }}
+                                        {{ Str::limit($request->dancestyles, 20) }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         {{ $request->email }}

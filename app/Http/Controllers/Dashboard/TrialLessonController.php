@@ -26,7 +26,7 @@ class TrialLessonController extends Controller
     }
 
     public function completed() {
-        $objects = RegisterTrialTraining::where('status', 'LIKE', 2)->get();
+        $objects = RegisterTrialTraining::where('status', 'LIKE', 2)->orderByDesc('updated_at')->get();
         return view('dashboard.pages.trial-training.completed', compact('objects'));
     }
 }

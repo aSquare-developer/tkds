@@ -16,8 +16,8 @@
             </div>
 
             <div class="form-group">
-                <label for="aeg">Vanus</label>
-                <input type="text" class="form-control" id="aeg" name="aeg" placeholder="Vanus" value="{{ old('aeg') }}" required>
+                <label for="age">Vanus</label>
+                <input type="number" class="form-control" id="age" name="age" placeholder="Vanus" value="{{ old('age') }}" required>
             </div>
 
             <div class="form-group">

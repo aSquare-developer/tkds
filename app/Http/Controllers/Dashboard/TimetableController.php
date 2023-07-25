@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class TimetableController extends Controller
 {
     public function index() {
-      $lessons = Timetable::All();
+      $lessons = Timetable::All()->sortBy('day');
       return view('dashboard.pages.timetable.index', compact('lessons'));
     }
 

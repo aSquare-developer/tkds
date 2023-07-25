@@ -51,7 +51,7 @@
                                         {{ $request->age }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        {{ $request->dancestyles }}
+                                        {{ Str::limit($request->dancestyles, 20) }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         {{ $request->email }}

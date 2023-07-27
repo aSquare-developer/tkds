@@ -12,6 +12,5 @@
     <p>Dance styles: {{ $mailData['dancestyle'] }}</p>
     <p>Email: {{ $mailData['email'] }}</p>
 
-    <p>You sent to him contract like: {{ Storage::url('storage/tkds_leping_tkd.pdf') }}</p>
   </body>
 </html>

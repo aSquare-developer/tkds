@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Dashboard\Requests;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 
 class RequestController extends Controller
 {
@@ -28,7 +29,7 @@ class RequestController extends Controller
      */
     public function completed()
     {
-        $completedRequests = Requests::where('status', 'LIKE', 2)->orderBy('created_at')->get();
+        $completedRequests = Requests::All()->where('status', 'LIKE', 2 )->sortByDesc('updated_at');
         return view('dashboard.pages.request.completed', compact('completedRequests'));
     }
 
@@ -54,11 +55,11 @@ class RequestController extends Controller
         ];
 
         if($fileId == 1) {
-            // Send notification to admin
-            Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
+
+            $mailDataAttachment = "https://tkds.ee/storage/tkds_leping_tkd.pdf";
 
             // Send Email for customer
-            Mail::to($request->email)->send(new NewStudentNotificationEmail());
+            Mail::to($request->email)->send(new NewStudentNotificationEmail($mailDataAttachment));
 
             // Change request status
             Requests::where('id', $request->id)->update(['status' => 2]);
@@ -67,11 +68,11 @@ class RequestController extends Controller
             return redirect()->route('dashboard-request')->with('success', 'Your request has been processed!');
 
         } else if ($fileId == 2) {
-            // Send notification to admin
-            Mail::to('info@tkds.ee')->send(new RegisterForTrialTrainingEmail($mailData));
+            
+            $mailDataAttachment = "https://www.tkds.ee/storage/tkds_leping_TT.pdf";
 
             // Send Email for customer
-            Mail::to($request->email)->send(new NewStudentNotificationForTrialEmail());
+            Mail::to($request->email)->send(new NewStudentNotificationEmail($mailDataAttachment));
 
             // Change request status
             Requests::where('id', $request->id)->update(['status' => 2]);

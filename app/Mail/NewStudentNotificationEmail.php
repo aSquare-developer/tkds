@@ -11,6 +11,13 @@ class NewStudentNotificationEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $mailDataAttachment;
+
+    public function __construct($mailDataAttachment)
+    {
+        $this->mailDataAttachment = $mailDataAttachment;
+    }
+
     /**
      * Build the message.
      *
@@ -21,8 +28,7 @@ class NewStudentNotificationEmail extends Mailable
             ->from('info@tkds.ee', 'TKDS')
             ->subject('Registreerimise kinnitus')
             ->view('email.new-student-notification')
-            ->attachFromStorage('', 'tkds_leping_tkd.pdf');
-
+            ->attach($this->mailDataAttachment);
     }
 
 }

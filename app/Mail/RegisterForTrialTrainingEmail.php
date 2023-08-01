@@ -33,7 +33,6 @@ class RegisterForTrialTrainingEmail extends Mailable
         return $this
                 ->subject('Proovitrennile registreerimine')
                 ->from('info@tkds.ee', 'TKDS')
-                ->view('email.trial-training')
-                ->attachFromStorage('', 'tkds_leping_TT.pdf');
+                ->view('email.trial-training');   
     }
 }

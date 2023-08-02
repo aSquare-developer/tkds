@@ -5,6 +5,7 @@
 @section('content')
 
 @include('pages.sections.header')
+@include('pages.sections.features')
 @include('pages.sections.dancestyle')
 @include('pages.sections.timetable')
 @include('pages.sections.contact')

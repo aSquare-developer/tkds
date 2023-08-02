@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NotificationForTrialTrainingEmail;
 use App\Mail\NewStudentNotificationEmail;
 use App\Mail\RegisterForLessonsEmail;
 use App\Mail\RegisterForTrialTrainingEmail;
@@ -61,7 +62,7 @@ class MainController extends Controller
         ];
 
         // Send email with data
-        // Mail::to("anissimov9393@gmail.com")->send(new RegisterForLessonsEmail($mailData));
+        Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
 
         // Send notification email to new student
         Mail::to($request->email)->send(new NewStudentNotificationEmail());
@@ -98,7 +99,10 @@ class MainController extends Controller
       ];
 
       // Send email with data
-    //   Mail::to("info@tkds.ee")->send(new RegisterForTrialTrainingEmail($mailData));
+        Mail::to("info@tkds.ee")->send(new RegisterForTrialTrainingEmail($mailData));
+
+        // Send email notification
+        Mail::to($request->email)->send(new NotificationForTrialTrainingEmail());
 
       // Redirect back to home page with success message
       return redirect()->route('home')->with('success', 'Täname registreerimise eest!');

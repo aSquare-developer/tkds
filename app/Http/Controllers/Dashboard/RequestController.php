@@ -47,12 +47,12 @@ class RequestController extends Controller
         $request = Requests::find($id);
 
         // Create a data for email
-        $mailData = [
-            "fullname" => $request->fullname,
-            "age" => $request->age,
-            "dancestyles" => $request->dancestyle,
-            "email" => $request->email
-        ];
+        // $mailData = [
+        //     "fullname" => $request->fullname,
+        //     "age" => $request->age,
+        //     "dancestyles" => $request->dancestyle,
+        //     "email" => $request->email
+        // ];
 
         if($fileId == 1) {
 
@@ -63,6 +63,11 @@ class RequestController extends Controller
 
             // Change request status
             Requests::where('id', $request->id)->update(['status' => 2]);
+
+            // Идея!
+            // Создание записи в таблице Students
+            // Students поля (fullname, age, dancestyle, email, contract, created_at)
+            // Плюс этого в том, что будет одна таблица со всеми студентами которым был отправлен контракт.
 
             // Redirect back with message
             return redirect()->route('dashboard-request')->with('success', 'Your request has been processed!');

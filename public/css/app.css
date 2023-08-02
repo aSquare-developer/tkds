@@ -79,7 +79,8 @@ ul {
 
 .table th,
 .table td {
-    white-space: nowrap; /* Предотвращает перенос текста в ячейке на новую строку */
+    white-space: nowrap;
+}
 
 p.lead {
     display: flex;

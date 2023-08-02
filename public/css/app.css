@@ -75,3 +75,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
+
+.table th,
+.table td {
+    white-space: nowrap; /* Предотвращает перенос текста в ячейке на новую строку */
+}

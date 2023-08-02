@@ -31,7 +31,7 @@
         <div class="card-body">
           <div class="card-body">
             <h4>1 STIIL + 1 STIIL</h4>
-            <h1 class="card-title pricing-card-title">-35%</h1>
+            <h1 class="card-title pricing-card-title">-20%</h1>
           </div>
         </div>
       </div>
@@ -113,9 +113,10 @@
       </div>
       <div class="modal-body">
         <p>
+            1H X NÄDALAS / KUU - 48€ <br />
           1.5H X NÄDALAS / KUU - 50€ <br />
           2H X NÄDALAS / KUU - 55€ <br />
-          3H X NÄDALAS / KUU - 60€
+          2.5H X NÄDALAS / KUU - 60€
         </p>
         <p>
           <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
@@ -146,7 +147,7 @@
       </div>
       <div class="modal-body">
         <p>
-          Kahe stiili valimisel on pakkumine -35% kogusummalt.
+          Kahe stiili valimisel on pakkumine -20% kogusummalt.
         </p>
         <p>
           <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>

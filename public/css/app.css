@@ -94,3 +94,8 @@ p.lead {
         font-size: 3.5rem;
     }
 }
+
+.rounded-circle.circular-image {
+    border-radius: 50%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}

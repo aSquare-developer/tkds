@@ -9,20 +9,12 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 
-  <!-- Glider CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/glider.css') }}"> -->
-
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="{{ URL::asset('/css/app.css') }}">
   <link rel="stylesheet" href="{{ URL::asset('/css/navbar.css') }}">
   <link rel="stylesheet" href="{{ URL::asset('/css/header.css') }}">
   <link rel="stylesheet" href="{{ URL::asset('/css/sticky-footer.css') }}">
   <link rel="stylesheet" href="{{ URL::asset('/css/timetable.css') }}">
-
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-
-  <link rel="stylesheet" href="{{ URL::asset('/css/swiper.css') }}">
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>

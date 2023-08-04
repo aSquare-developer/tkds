@@ -88,3 +88,9 @@ p.lead {
     justify-content: center;
 
 }
+
+@media (max-width: 767.98px) {
+    .display-3 {
+        font-size: 3.5rem;
+    }
+}

@@ -87,7 +87,7 @@
 
   <div class="row">
     <div class="col-md-12">
-      <div class="card mb-4 box-shadow">
+      <div class="card mb-4 box-shadow" data-toggle="modal" data-target=".unlimited-package-lg">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">PIIRAMATU PAKETT</h4>
         </div>
@@ -122,14 +122,15 @@
           <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
         </p>
         <p>
-          Kui trenn toimub üks kord nädalas ning kestab poolteist tundi kord, siis on 50€<br />
-          Kui trenn toimub kaks korda nädalas ning kestab üks tund kord, siis kuumakse on 55€<br />
-          Kui trenn toimub kaks korda nädalas ning kestab poolteist tundi kord, siis kuumakse on 60€
+            Kui trenn toimub üks kord nädalas ning kestab üks tund kord, siis kuumakse on 48€ <br/>
+            Kui trenn toimub üks kord nädalas ning kestab poolteist tundi kord, siis on 50€ <br/>
+            Kui trenn toimub kaks korda nädalas ning kestab üks tund kord VÕI kui trenn toimub üks kord nädalas ning kaks tundi kord, siis kuumakse on 55€ <br/>
+            Kui trenn toimub kaks korda nädalas ning kestab üks tund ja viisteist minutit kotd, siis kuumakse on 60€
         </p>
         <p>
-          Kuupakett sisaldab:<br />
-          4 trennid kuus (kui trenn toimub 1 kord nädalas, 1H / 1.5H / 2H)<br />
-          8 trennid kuus (kui trenn toimub 2 korda nädalas, 1H / 1.5H)
+            Kuupakett sisaldab: <br />
+            4 trennid kuus (kui trenn toimub 1 kord nädalas, 1H / 1.5H / 2H) <br />
+            8 trennid kuus (kui trenn toimub 2 korda nädalas, 1H / 1.15H)
         </p>
       </div>
     </div>
@@ -167,13 +168,16 @@
         </button>
       </div>
       <div class="modal-body">
+          <p>
+              1h - TASUTA <br />
+              1.5h - 7 euro <br />
+              2h - 10 euro
+          </p>
         <p>
-          Tasuta proovitreeningu saamiseks palun kirjutage meile info@tkds.ee. <br />
-          Täpsustage mis stiili soovite võtta ja me kutsume Teid tundi. <br />
-          Registreerumise puudumisel võetakse tasu ühekordse õppetunni eest.
-        </p>
-        <p>
-          <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
+            Tasuta proovitreeningu saamiseks palun registreeruge <a href="{{ route('registerForTrialTrainingPage') }}">selle lingi kaudu</a><br />
+            Registreerumise puudumisel võetakse tasu ühekordse õppetunni eest.<br />
+            Vastuseks Teie registreerimisele võtame Teiega ühendust ja kirjutame, mis päeval ja kellaajal saate tulla.<br />
+            Ainult sel juhul kinnitatakse registreerimine proovitundi.
         </p>
       </div>
     </div>
@@ -192,10 +196,11 @@
       <div class="modal-body">
 
         <p>
-          Üks trenn mis kestab üks tund - 13€<br />
-          Üks trenn mis kestab poolteist tundi - 15€<br />
-          Üks trenn mis kestab kaks tundi - 20€<br /><br />
-          Ühekordse visiidi korral, saate maksta enne trenni sularahas
+            Üks trenn mis kestab 1h / 1.15h- 15€<br />
+            Üks trenn mis kestab poolteist tundi - 17€<br />
+            Üks trenn mis kestab kaks tundi - 20€<br />
+            <br />
+            Ühekordse visiidi korral, saate maksta enne trenni sularahas
         </p>
       </div>
     </div>
@@ -218,6 +223,26 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="modal fade unlimited-package-lg" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tenHourModalTitle">PIIRAMATU PAKETT</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    See pakett kehtib avatud rühmades kõikidel tundidel osalemisel.<br />
+                    Täpsustamiseks, millised rühmad on avatud, küsige oma mentorilt või kirjutage meile posti teel.<br />
+                    Suletud rühmade külastamine on võimalik ainult mentori nõusolekul
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 
 @endsection

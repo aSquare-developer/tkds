@@ -96,8 +96,8 @@ p.lead {
 }
 
 .circular-image {
-    width: 150px; /* Set your desired width */
-    height: 150px; /* Set your desired height */
+    width: 250px; /* Set your desired width */
+    height: 250px; /* Set your desired height */
     object-fit: cover;
     border-radius: 50%;
 }

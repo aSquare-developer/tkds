@@ -65,7 +65,7 @@ class MainController extends Controller
         Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
 
         // Send notification email to new student
-        Mail::to($request->email)->send(new NewStudentNotificationEmail());
+        // Mail::to($request->email)->send(new NewStudentNotificationEmail());
 
         // Redirect back to home page with success message
         return redirect()->route('home')->with('success', 'Teie sõnum on edukalt saadetud.');

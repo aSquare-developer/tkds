@@ -11,7 +11,7 @@
                     <!-- Row -->
                     <div class="row">
                         <div class="col-md-12">
-                            <img src="{{ Storage::url($teacher->image_url) }}" alt="{{ Str::slug($teacher->fullname) }}" class="img-fluid rounded-circle circular-image" />
+                            <img src="{{ Storage::url($teacher->image_url) }}" alt="{{ Str::slug($teacher->fullname) }}" class="img-fluid circular-image" />
                         </div>
                         <div class="col-md-12 text-center">
                             <div class="pt-2">

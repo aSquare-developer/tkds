@@ -58,7 +58,7 @@
                                         {{ $request->email }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        {{ isset($request->created_at) ? $request->created_at->format('d M Y H:i') : '' }}
+                                        {{ isset($request->created_at) ? $request->created_at->format('d M Y G:i') : '' }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         @include('dashboard.pages.request.status.template', ['object' => $request])

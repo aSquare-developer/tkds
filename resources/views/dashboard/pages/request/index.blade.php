@@ -17,9 +17,9 @@
         </div>
     </div>
 
-@if($requests->count() > 0)
-
     @include('dashboard.includes.message')
+
+    @if($requests->count() > 0)
 
     <div class="mt-3 flow-root">
         <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">

@@ -25,7 +25,7 @@ class TeacherController extends Controller
 
         $request->validate([
             'fullname' => 'required|string|max:255',
-            'image_url' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image_url' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'description' => 'required|string',
             'dance_styles' => ['required', new AtLeastOneCheckbox],
         ], [

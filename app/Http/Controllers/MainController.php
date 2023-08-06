@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NotificationForTrialTrainingEmail;
+use App\Mail\NewStudentNotificationEmail;
 use App\Mail\RegisterForLessonsEmail;
 use App\Mail\RegisterForTrialTrainingEmail;
 use App\Models\Dancestyle;
 use App\Models\Dashboard\Requests;
 use App\Models\Dashboard\Timetable;
 use App\Models\Header;
+use App\Models\RegisterNewStudent;
 use App\Models\RegisterTrialTraining;
 use App\Models\Teacher;
 use App\Rules\ReCaptcha;
@@ -35,7 +38,6 @@ class MainController extends Controller
             'g-recaptcha-response' => ['required', new ReCaptcha]
         ]);
 
-        // Create record in database
         Requests::create([
             'fullname' => $request->fullname,
             'age' => $request->age,

@@ -57,7 +57,7 @@ class MainController extends Controller
         Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
 
         // Redirect back to home page with success message
-        return redirect()->route('home')->with('success', 'Täname registreerumise eest! Võtame teiega esimesel võimalusel ühendust.');
+        return redirect()->route('home')->with('success', 'Täname registreerumise eest! Võtame teiega ühendust esimesel võimalusel.');
 
     }
 
@@ -91,6 +91,6 @@ class MainController extends Controller
         Mail::to("info@tkds.ee")->send(new RegisterForTrialTrainingEmail($mailData));
 
       // Redirect back to home page with success message
-      return redirect()->route('home')->with('success', 'Täname proovitunnile registreerumise eest! Võtame teiega esimesel võimalusel ühendust.');
+      return redirect()->route('home')->with('success', 'Täname registreerumise eest! Võtame teiega ühendust esimesel võimalusel.');
     }
 }

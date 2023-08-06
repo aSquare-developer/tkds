@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center mb-4">
             <div class="col-md-7 text-center">
-                <h3 class="mb-3">Experienced & Professional Team</h3>
+                <h3 class="mb-3">MEIE TIIM</h3>
             </div>
         </div>
         <div class="row">

@@ -2,15 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\NotificationForTrialTrainingEmail;
-use App\Mail\NewStudentNotificationEmail;
 use App\Mail\RegisterForLessonsEmail;
 use App\Mail\RegisterForTrialTrainingEmail;
 use App\Models\Dancestyle;
 use App\Models\Dashboard\Requests;
 use App\Models\Dashboard\Timetable;
 use App\Models\Header;
-use App\Models\RegisterNewStudent;
 use App\Models\RegisterTrialTraining;
 use App\Models\Teacher;
 use App\Rules\ReCaptcha;
@@ -38,19 +35,12 @@ class MainController extends Controller
             'g-recaptcha-response' => ['required', new ReCaptcha]
         ]);
 
+        // Create record in database
         Requests::create([
             'fullname' => $request->fullname,
             'age' => $request->age,
             'dancestyles' => $request->dancestyle,
             'email' => $request->email,
-        ]);
-
-        // Create a record in database of new student
-        RegisterNewStudent::create([
-            'fullname' => $request->fullname,
-            'age' => $request->age,
-            'dancestyles' => $request->dancestyle,
-            'email' => $request->email
         ]);
 
         // Create a data for email
@@ -64,11 +54,8 @@ class MainController extends Controller
         // Send email with data
         Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
 
-        // Send notification email to new student
-        Mail::to($request->email)->send(new NewStudentNotificationEmail());
-
         // Redirect back to home page with success message
-        return redirect()->route('home')->with('success', 'Teie sõnum on edukalt saadetud.');
+        return redirect()->route('home')->with('success', 'Täname registreerumise eest! Võtame teiega esimesel võimalusel ühendust.');
 
     }
 
@@ -101,10 +88,7 @@ class MainController extends Controller
       // Send email with data
         Mail::to("info@tkds.ee")->send(new RegisterForTrialTrainingEmail($mailData));
 
-        // Send email notification
-        Mail::to($request->email)->send(new NotificationForTrialTrainingEmail());
-
       // Redirect back to home page with success message
-      return redirect()->route('home')->with('success', 'Täname registreerimise eest!');
+      return redirect()->route('home')->with('success', 'Täname proovitunnile registreerumise eest! Võtame teiega esimesel võimalusel ühendust.');
     }
 }

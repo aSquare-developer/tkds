@@ -68,7 +68,7 @@
         </div>
         <div class="card-body">
           <h3 class="my-0 font-weight-normal">10H KAART</h3>
-          <h1 class="card-title pricing-card-title">60€</h1>
+          <h1 class="card-title pricing-card-title">75€</h1>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
           <h4 class="my-0 font-weight-normal">PIIRAMATU PAKETT</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">100€</h1>
+          <h1 class="card-title pricing-card-title">115€</h1>
           <p>Tantsite nii palju kui soovite :)</p>
         </div>
       </div>

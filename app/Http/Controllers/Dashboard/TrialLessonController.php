@@ -29,4 +29,15 @@ class TrialLessonController extends Controller
         $objects = RegisterTrialTraining::where('status', 'LIKE', 2)->orderByDesc('updated_at')->get();
         return view('dashboard.pages.trial-training.completed', compact('objects'));
     }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     */
+    public function destroy($id)
+    {
+        RegisterTrialTraining::destroy($id);
+        return redirect()->route('dashboard.pages.trial-training.index')->with('success', 'Your request was deleted successfully.');
+    }
 }

@@ -110,4 +110,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard/trial-lessons/completed', [TrialLessonController::class, 'completed'])->name('dashboard.trial.lessons.completed');
     Route::get('/dashboard/trial-lessons/{id}', [TrialLessonController::class, 'show'])->name('dashboard.trial.lessons.show');
     Route::post('/dashboard/trial-lessons/{id}/change-status', [TrialLessonController::class, 'changeStatus'])->name('dashboard.trial.lessons.change.status');
+    Route::delete('/dashboard/trial-lessons/{id}', [TrialLessonController::class, 'destroy'])->name('dashboard.trial.lessons.destroy');
 });

@@ -115,22 +115,22 @@
         <p>
             1H X NÄDALAS / KUU - 48€ <br />
           1.5H X NÄDALAS / KUU - 50€ <br />
-          2H X NÄDALAS / KUU - 55€ <br />
+            2H X NÄDALAS / KUU - 55€ <br />
           2.5H X NÄDALAS / KUU - 60€
         </p>
         <p>
           <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
         </p>
         <p>
-            Kui trenn toimub üks kord nädalas ning kestab üks tund kord, siis kuumakse on 48€ <br/>
-            Kui trenn toimub üks kord nädalas ning kestab poolteist tundi kord, siis on 50€ <br/>
-            Kui trenn toimub kaks korda nädalas ning kestab üks tund kord VÕI kui trenn toimub üks kord nädalas ning kaks tundi kord, siis kuumakse on 55€ <br/>
-            Kui trenn toimub kaks korda nädalas ning kestab üks tund ja viisteist minutit kotd, siis kuumakse on 60€
+            Kui trenn toimub üks kord nädalas ning kestab üks tund kord, siis kuumakse on 48€<br/>
+            Kui trenn toimub üks kord nädalas ning kestab poolteist tundi kord, siis kuumakse on 50€<br/>
+            Kui trenn toimub kaks korda nädalas ning kestab üks tund kord või kui trenn toimub üks kord nädalas ning kaks tundi kord, siis kuumakse on 55€<br/>
+            Kui trenn toimub kaks korda nädalas ning kestab üks tund ja viisteist minutit kord, siis kuumakse on 60€
         </p>
         <p>
-            Kuupakett sisaldab: <br />
-            4 trennid kuus (kui trenn toimub 1 kord nädalas, 1H / 1.5H / 2H) <br />
-            8 trennid kuus (kui trenn toimub 2 korda nädalas, 1H / 1.15H)
+            Kuupakett sisaldab:<br />
+            4 trenni kuus (kui trenn toimub 1 kord nädalas, 1H / 1.5H / 2H)<br />
+            8 trenni kuus (kui trenn toimub 2 korda nädalas, 1H / 1.15H)
         </p>
       </div>
     </div>

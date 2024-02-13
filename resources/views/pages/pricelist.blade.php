@@ -44,7 +44,7 @@
         <div class="card-body">
           <br />
           <h1 class="my-0 font-weight-normal">PROOVITRENN</h1>
-          <h4><strong>TASUTA</strong></h4>
+          <h1 class="card-title pricing-card-title">15€</h1>
         </div>
       </div>
     </div>
@@ -119,9 +119,6 @@
           2.5H X NÄDALAS / KUU - 60€
         </p>
         <p>
-          <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
-        </p>
-        <p>
             Kui trenn toimub üks kord nädalas ning kestab üks tund kord, siis kuumakse on 48€<br/>
             Kui trenn toimub üks kord nädalas ning kestab poolteist tundi kord, siis kuumakse on 50€<br/>
             Kui trenn toimub kaks korda nädalas ning kestab üks tund kord või kui trenn toimub üks kord nädalas ning kaks tundi kord, siis kuumakse on 55€<br/>
@@ -150,9 +147,6 @@
         <p>
           Kahe stiili valimisel on pakkumine -20% kogusummalt.
         </p>
-        <p>
-          <strong>Kui proovitunnis viibiv õpilane otsustab tundi jätkata, siis proovitund on hinna sees.</strong>
-        </p>
       </div>
     </div>
   </div>
@@ -168,16 +162,8 @@
         </button>
       </div>
       <div class="modal-body">
-          <p>
-              1h - TASUTA <br />
-              1.5h - 7 euro <br />
-              2h - 10 euro
-          </p>
         <p>
-            Tasuta proovitreeningu saamiseks palun registreeruge <a href="{{ route('registerForTrialTrainingPage') }}">selle lingi kaudu</a><br />
-            Registreerumise puudumisel võetakse tasu ühekordse õppetunni eest.<br />
-            Vastuseks Teie registreerimisele võtame Teiega ühendust ja kirjutame, mis päeval ja kellaajal saate tulla.<br />
-            Ainult sel juhul kinnitatakse registreerimine proovitundi.
+            Proovitreeningu saamiseks palun registreeruge <a href="{{ route('registerForTrialTrainingPage') }}">selle lingi kaudu</a><br />
         </p>
       </div>
     </div>

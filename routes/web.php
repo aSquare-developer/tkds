@@ -50,6 +50,7 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perform');
 
+// Dashboard Section
 Route::middleware(['auth'])->group(function () {
   // Dashboard Routes
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard-index');

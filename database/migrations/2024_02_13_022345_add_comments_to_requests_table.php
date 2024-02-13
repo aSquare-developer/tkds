@@ -13,8 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('register_trial_trainings', function (Blueprint $table) {
-            $table->unsignedInteger('status')->default(0)->after('email');
+        Schema::table('requests', function (Blueprint $table) {
+            $table->longText('comment')->after('dancestyles')->nullable();
         });
     }
 
@@ -25,8 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('register_trial_trainings', function (Blueprint $table) {
-            $table->dropColumn('status');
+        Schema::table('requests', function (Blueprint $table) {
+            $table->dropColumn('comment');
         });
     }
 };

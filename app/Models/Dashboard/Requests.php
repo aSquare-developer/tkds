@@ -9,5 +9,5 @@ class Requests extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['fullname', 'age', 'dancestyles', 'email'];
+    protected $fillable = ['fullname', 'age', 'dancestyles', 'comment', 'email'];
 }

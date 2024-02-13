@@ -34,14 +34,15 @@ class MainController extends Controller
     public function registerForLessons(Request $request) {
 
         // Validate the form [RECAPTCHA]
-        $request->validate([
-            'g-recaptcha-response' => ['required', new ReCaptcha]
-        ]);
+        // $request->validate([
+        //     'g-recaptcha-response' => ['required', new ReCaptcha]
+        // ]);
 
         Requests::create([
             'fullname' => $request->fullname,
             'age' => $request->age,
             'dancestyles' => $request->dancestyle,
+            'comment' => $request->comment,
             'email' => $request->email,
         ]);
 
@@ -50,11 +51,12 @@ class MainController extends Controller
             "fullname" => $request->fullname,
             "age" => $request->age,
             "dancestyle" => $request->dancestyle,
+            "comment" => $request->comment,
             "email" => $request->email
         ];
 
         // Send email with data
-        Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
+        // Mail::to("info@tkds.ee")->send(new RegisterForLessonsEmail($mailData));
 
         // Redirect back to home page with success message
         return redirect()->route('home')->with('success', 'Täname registreerumise eest! Võtame teiega ühendust esimesel võimalusel.');

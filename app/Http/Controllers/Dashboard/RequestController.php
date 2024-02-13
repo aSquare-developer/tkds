@@ -20,7 +20,7 @@ class RequestController extends Controller
      */
     public function index()
     {
-        $requests = Requests::where('status', 'LIKE', 0)->get();
+        $requests = Requests::where('status', 'LIKE', 0)->orderBy('created_at', 'desc')->get();
         return view('dashboard.pages.request.index', compact('requests'));
     }
 

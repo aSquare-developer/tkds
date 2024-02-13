@@ -22,11 +22,11 @@
     <div>
         <div class="mt-6">
             <dl class="grid grid-cols-1 sm:grid-cols-2">
-                <div class="sm:col-span-1 sm:px-0">
+                <div class="px-4 py-6 sm:col-span-1 sm:px-0">
                     <dt class="text-sm font-medium leading-6 text-gray-900">Full name</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:mt-2">{{ $request->fullname }}</dd>
                 </div>
-                <div class="sm:col-span-1 sm:px-0">
+                <div class="px-4 py-6 sm:col-span-1 sm:px-0">
                     <dt class="text-sm font-medium leading-6 text-gray-900">Age</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:mt-2">{{ $request->age }}</dd>
                 </div>
@@ -38,7 +38,14 @@
                     <dt class="text-sm font-medium leading-6 text-gray-900">Dance styles</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:mt-2">{{ $request->dancestyles }}</dd>
                 </div>
+
                 <div class="border-t border-gray-100 px-4 py-6 sm:col-span-2 sm:px-0">
+                    <dt class="text-sm font-medium leading-6 text-gray-900">Comment</dt>
+                    <dd class="mt-1 text-sm leading-6 text-gray-700 sm:mt-2">{{ $request->comment }}</dd>
+                </div>
+
+
+                <div class="px-4 py-6 sm:col-span-2 sm:px-0">
                     <dt class="text-sm font-medium leading-6 text-gray-900">You can send some Contracts</dt>
                     <dd class="mt-2 text-sm text-gray-900">
                         <ul role="list" class="divide-y divide-gray-100 rounded-md border border-gray-200">

@@ -26,6 +26,11 @@
             </div>
 
             <div class="form-group">
+                <label for="comment">Kommentaarid</label>
+                <textarea class="form-control" id="comment" name="comment" value="{{ old('comment') }}" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
                 <label for="email">E-post</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="E-post" value="{{ old('email') }}" required>
             </div>

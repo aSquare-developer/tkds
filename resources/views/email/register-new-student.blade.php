@@ -10,6 +10,7 @@
     <p>First and Last name of student: {{ $mailData['fullname'] }}</p>
     <p>Age: {{ $mailData['age'] }}</p>
     <p>Dance styles: {{ $mailData['dancestyle'] }}</p>
+    <p>Comment: {{ $mailData['comment'] }} </p>
     <p>Email: {{ $mailData['email'] }}</p>
 
   </body>

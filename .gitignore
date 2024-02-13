@@ -2,6 +2,8 @@
 /public/build
 /public/hot
 /public/storage
+/public/video/tkds.mp4
+/public/video/tkds.old.mp4
 /storage/*.key
 /vendor
 .env

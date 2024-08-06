@@ -13,8 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('requests', function (Blueprint $table) {
-            $table->longText('comment')->after('dancestyles')->nullable();
+        Schema::create('price_lists', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->string('price');
+            $table->string('description');
+            $table->boolean('status');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('requests', function (Blueprint $table) {
-            $table->dropColumn('comment');
-        });
+        Schema::dropIfExists('price_lists');
     }
 };

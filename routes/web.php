@@ -11,10 +11,11 @@ use App\Http\Controllers\Dashboard\TaskListController;
 use App\Http\Controllers\Dashboard\TeacherController;
 use App\Http\Controllers\Dashboard\TimetableController;
 use App\Http\Controllers\Dashboard\TrialLessonController;
+use App\Http\Controllers\Dashboard\PriceListController;
 use App\Http\Controllers\HallBookingController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\MainController;
-use App\Http\Controllers\PriceListController;
+use App\Http\Controllers\PriceController;
 use App\Http\Controllers\RentPageController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,7 +33,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MainController::class, 'index'])->name('home');
 
 Route::get('/rent', [HallBookingController::class, 'index'])->name('hall-booking');
-Route::get('/hinnakiri', [PriceListController::class, 'index'])->name('price-list');
+Route::get('/hinnakiri', [PriceController::class, 'index'])->name('price-list');
 
 Route::get('/register-for-lessons', [MainController::class, 'registerForLessonsPage'])->name('registerForLessonsPage');
 Route::post('/register-for-lessons', [MainController::class, 'registerForLessons']);
@@ -112,4 +113,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard/trial-lessons/{id}', [TrialLessonController::class, 'show'])->name('dashboard.trial.lessons.show');
     Route::post('/dashboard/trial-lessons/{id}/change-status', [TrialLessonController::class, 'changeStatus'])->name('dashboard.trial.lessons.change.status');
     Route::delete('/dashboard/trial-lessons/{id}', [TrialLessonController::class, 'destroy'])->name('dashboard.trial.lessons.destroy');
+
+    // Dashboard Price List Section
+    Route::get('/dashboard/pricelist', [PriceListController::class, 'index'])->name('dashboard.priselist.index');
+    Route::get('/dashboard/pricelist/create', [PriceListController::class, 'create'])->name('dashboard.priselist.create');
+    Route::post('/dashboard/pricelist/store', [PriceListController::class, 'store'])->name('dashboard.priselist.store');
+    Route::get('/dashboard/pricelist/{offer}/edit', [PriceListController::class, 'edit'])->name('dashboard.priselist.edit');
+    Route::patch('/dashboard/pricelist/{offer}/update', [PriceListController::class, 'update'])->name('dashboard.priselist.update');
+    Route::delete('/dashboard/pricelist/{service}', [PriceListController::class, 'destroy'])->name('dashboard.priselist.delete');
 });

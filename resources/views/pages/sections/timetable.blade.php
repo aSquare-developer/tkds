@@ -31,7 +31,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 1 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 1)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -42,7 +42,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 2 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 1)
-                              <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -53,7 +53,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 3 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 1)
-                              <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -64,7 +64,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 4 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 1)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -75,7 +75,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 5 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 1)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -86,7 +86,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 6 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 1)
-                              <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -97,7 +97,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 7 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 1)
-                              <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -111,7 +111,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 1 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 2)
-                            <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -122,7 +122,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 2 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 2)
-                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -133,7 +133,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 3 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 2)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -144,7 +144,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 4 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 2)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -155,7 +155,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 5 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 2)
-                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -166,7 +166,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 6 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 2)
-                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -177,7 +177,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 7 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 2)
-                            <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -191,7 +191,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 1 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 3)
-                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -202,7 +202,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 2 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 3)
-                              <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -213,7 +213,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 3 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 3)
-                              <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -224,7 +224,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 4 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 3)
-                              <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -235,7 +235,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 5 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 3)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -246,7 +246,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 6 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 3)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -257,7 +257,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 7 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 3)
-                              <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -271,7 +271,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 1 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 4)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -282,7 +282,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 2 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 4)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -293,7 +293,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 3 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 4)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -304,7 +304,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 4 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 4)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -315,7 +315,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 5 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 4)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -326,7 +326,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 6 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 4)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -337,7 +337,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 7 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 4)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -351,7 +351,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 1 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 5)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -362,7 +362,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 2 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 5)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -373,7 +373,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 3 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 5)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -384,7 +384,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 4 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 5)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -395,7 +395,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 5 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 5)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -406,7 +406,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 6 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 5)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -417,7 +417,7 @@
                         @foreach($arrayOflessons as $lessons)
                           @foreach($lessons as $lesson)
                             @if($lesson->day == 7 && $lesson->hall_size == 0 && $lesson->order_of_lesson == 5)
-                              <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                              <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                               <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                               <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                             @endif
@@ -450,7 +450,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 1 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 1)
-                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -461,7 +461,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 2 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 1)
-                            <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -472,7 +472,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 3 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 1)
-                            <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -483,7 +483,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 4 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 1)
-                            <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -494,7 +494,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 5 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 1)
-                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -505,7 +505,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 6 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 1)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -516,7 +516,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 7 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 1)
-                            <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -529,7 +529,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 1 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 2)
-                            <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -540,7 +540,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 2 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 2)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -551,7 +551,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 3 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 2)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -562,7 +562,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 4 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 2)
-                            <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -573,7 +573,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 5 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 2)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -584,7 +584,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 6 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 2)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -595,7 +595,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 7 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 2)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -608,7 +608,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 1 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 3)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -619,7 +619,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 2 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 3)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -630,7 +630,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 3 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 3)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -641,7 +641,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 4 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 3)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -652,7 +652,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 5 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 3)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -663,7 +663,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 6 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 3)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -674,7 +674,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 7 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 3)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -687,7 +687,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 1 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 4)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -698,7 +698,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 2 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 4)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -709,7 +709,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 3 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 4)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -720,7 +720,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 4 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 4)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -731,7 +731,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 5 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 4)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -742,7 +742,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 6 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 4)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -753,7 +753,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 7 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 4)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -766,7 +766,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 1 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 5)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -777,7 +777,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 2 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 5)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -788,7 +788,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 3 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 5)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -799,7 +799,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 4 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 5)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -810,7 +810,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 5 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 5)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -821,7 +821,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 6 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 5)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif
@@ -832,7 +832,7 @@
                       @foreach($arrayOflessons as $lessons)
                         @foreach($lessons as $lesson)
                           @if($lesson->day == 7 && $lesson->hall_size == 1 && $lesson->order_of_lesson == 5)
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
+                            <span class="bg-{{ $lesson->color }} padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">{{ $lesson->dancestyle }}</span>
                             <div class="margin-10px-top font-size14">{{ $lesson->getLessonStartAndEndTime() }}</div>
                             <div class="font-size13 text-light-gray">{{ $lesson->description }}</div>
                           @endif

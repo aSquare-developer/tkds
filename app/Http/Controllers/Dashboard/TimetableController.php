@@ -25,7 +25,8 @@ class TimetableController extends Controller
         'lesson_end' => $req->lesson_end,
         'description' => $req->description,
         'order_of_lesson' => $req->order_of_lesson,
-        'hall_size' => $req->hall_size
+        'hall_size' => $req->hall_size,
+        'color' => $req->color
       ]);
 
       return redirect()->route('dashboard-timetable')->with('success', 'Your lesson was added to list successfully.');
@@ -45,7 +46,8 @@ class TimetableController extends Controller
         $req->lesson_end,
         $req->description,
         $req->order_of_lesson,
-        $req->hall_size
+        $req->hall_size,
+        $req->color
       );
 
       if($result) {

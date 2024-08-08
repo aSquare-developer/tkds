@@ -48,7 +48,9 @@
                                         {{ $lesson->getWeekDay() }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        {{ $lesson->dancestyle }}
+                                        <span class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                                            {{ $lesson->dancestyle }}
+                                        </span>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         {{ $lesson->lesson_start }} - {{ $lesson->lesson_end }}

@@ -28,7 +28,8 @@ class Timetable extends Model
       'lesson_end',
       'description',
       'order_of_lesson',
-      'hall_size'
+      'hall_size',
+      'color'
     ];
 
     /**
@@ -76,7 +77,7 @@ class Timetable extends Model
      *
      * @var array
      */
-    public function updateLesson($day, $dancestyle, $lesson_start, $lesson_end, $description, $order_of_lesson, $hall_size) {
+    public function updateLesson($day, $dancestyle, $lesson_start, $lesson_end, $description, $order_of_lesson, $hall_size, $color) {
       $this->day = $day;
       $this->dancestyle = $dancestyle;
       $this->lesson_start = $lesson_start;
@@ -84,6 +85,7 @@ class Timetable extends Model
       $this->description = $description;
       $this->order_of_lesson = $order_of_lesson;
       $this->hall_size = $hall_size;
+      $this->color = $color;
 
       if($this->save()) {
         return true;

@@ -41,30 +41,40 @@
       </div>
 
       <div class="mt-2">
+        <label for="color" class="block text-sm font-medium leading-6 text-gray-900">Choose a color</label>
+        <select id="color" name="color" required class="mt-2 block rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <option value="sky" selected>Sky</option>
+            <option value="green">Green</option>
+            <option value="purple">Purple</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        </div>
+
+      <div class="mt-2">
           <label for="dancestyle" class="block text-sm font-medium leading-6 text-gray-900">Dance style</label>
           <div class="mt-2">
-              <input type="text" name="dancestyle" id="dancestyle" class="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Dancestyle" required>
+              <input type="text" name="dancestyle" id="dancestyle" class="block rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Dancestyle" required>
           </div>
       </div>
 
       <div class="mt-2">
           <label for="lesson_start" class="block text-sm font-medium leading-6 text-gray-900">Type lesson start time</label>
           <div class="mt-2">
-              <input type="text" name="lesson_start" id="lesson_start" class="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Format: 12:30" required>
+              <input type="text" name="lesson_start" id="lesson_start" class="block rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Format: 12:30" required>
           </div>
       </div>
 
       <div class="mt-2">
           <label for="lesson_end" class="block text-sm font-medium leading-6 text-gray-900">Type lesson end time</label>
           <div class="mt-2">
-              <input type="text" name="lesson_end" id="lesson_end" class="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Format: 12:30" required>
+              <input type="text" name="lesson_end" id="lesson_end" class="block rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Format: 12:30" required>
           </div>
       </div>
 
       <div class="mt-2">
           <label for="description" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
           <div class="mt-2">
-              <input type="text" name="description" id="description" class="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Exmaple Open/Close..." required>
+              <input type="text" name="description" id="description" class="block rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Exmaple Open/Close..." required>
           </div>
       </div>
 
@@ -78,7 +88,7 @@
                   value="1"
                   min="1"
                   max="5"
-                  class="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  class="block rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   placeholder=""
               >
           </div>

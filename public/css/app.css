@@ -108,9 +108,6 @@ p.lead {
     border-radius: 5px;
 }
 
-
-
-body{margin-top:20px;}
 /*========================
 =====Pricing Table CSS====
 =========================*/
@@ -194,18 +191,6 @@ body{margin-top:20px;}
 	color:#fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .single-table .btn.btn-primary:hover, 
 .single-table.featured-table .btn.btn-primary:hover{
 	color:#020202;
@@ -215,12 +200,6 @@ body{margin-top:20px;}
 .single-table .btn.btn-primary:hover:before {
 	background-color:#f4c216;;
 }
-
-
-
-
-
-
 
 #pricing-tables .section-title h2:before {
     background-image: url("../images/home/icons/pricing-title-icon.png");

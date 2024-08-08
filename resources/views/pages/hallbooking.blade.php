@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <header>
+    {{-- <header>
 
         <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
         <div class="overlay"></div>
@@ -14,15 +14,15 @@
             <source src="{{ URL::asset($rent_page->video_url) }}" type="video/mp4">
         </video>
 
-    </header>
+    </header> --}}
 
 
 <div class="container pt-5">
 
     {!! $rent_page->content !!}
 
-    <!-- Gallery -->
-    <div class="row pt-5">
+    
+    {{-- <div class="row pt-5">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
             <img
                 src="{{ URL::asset('img/gallery/a.jpg') }}"
@@ -54,7 +54,7 @@
             />
         </div>
     </div>
-    <!-- Gallery -->
+     --}}
 </div>
 
 @include('pages.sections.contact')

@@ -4,8 +4,8 @@
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs justify-content-center" role="tablist">
-      <li role="presentation"><a class="active" href="#bighall" aria-controls="bighall" role="tab" data-toggle="tab"><h3>Suur saal</h3></a></li>
-      <li role="presentation"><a href="#smallhall" aria-controls="smallhall" role="tab" data-toggle="tab"><h3>Väike saal</h3></a></li>
+      <li role="presentation"><a class="active" href="#bighall" aria-controls="bighall" role="tab" data-toggle="tab"><h3>STUDIO II</h3></a></li>
+      <li role="presentation"><a href="#smallhall" aria-controls="smallhall" role="tab" data-toggle="tab"><h3>STUDIO I</h3></a></li>
     </ul>
 
     <!-- Tab panes -->

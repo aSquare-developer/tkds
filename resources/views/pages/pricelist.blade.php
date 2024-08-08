@@ -8,7 +8,7 @@
 
 <div class="container pt-5">
   <div id="pricing-tables" class="padding-top padding-bottom">
-    <h1 class="text-center pb-5 text-white">HINNAKIRI 2024/25</h1>
+    <h1 class="text-center pb-5 text-white">HINNAKIRI {{ date('Y') }}/{{ date('y', strtotime('+1 year')) }}</h1>
     <div class="container text-center">
         <div class="pricing-table  text-left">
             <div class="row">

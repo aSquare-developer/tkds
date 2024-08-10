@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="container">
-        <h1>Uute tantsijate vastuvõtt 2022/23</h1>
+        <h1>Uute tantsijate vastuvõtt {{ date('Y') }}/{{ date('y', strtotime('+1 year')) }}</h1>
 
         <form action="/register-for-lessons" method="post">
             @csrf

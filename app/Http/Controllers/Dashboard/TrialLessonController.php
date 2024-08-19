@@ -26,7 +26,7 @@ class TrialLessonController extends Controller
     }
 
     public function completed() {
-        $objects = RegisterTrialTraining::where('status', 'LIKE', 2)->orderByDesc('updated_at')->get();
+        $objects = RegisterTrialTraining::where('status', 'LIKE', 2)->orderByDesc('updated_at')->paginate(5);
         return view('dashboard.pages.trial-training.completed', compact('objects'));
     }
 
@@ -38,6 +38,6 @@ class TrialLessonController extends Controller
     public function destroy($id)
     {
         RegisterTrialTraining::destroy($id);
-        return redirect()->route('dashboard.pages.trial-training.index')->with('success', 'Your request was deleted successfully.');
+        return redirect()->route('dashboard.trial.lessons.completed')->with('success', 'Your request was deleted successfully.');
     }
 }

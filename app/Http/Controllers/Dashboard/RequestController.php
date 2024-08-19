@@ -29,7 +29,7 @@ class RequestController extends Controller
      */
     public function completed()
     {
-        $completedRequests = Requests::All()->where('status', 'LIKE', 2 )->sortByDesc('updated_at');
+        $completedRequests = Requests::where('status', 'LIKE', 2 )->orderBy('updated_at', 'desc')->paginate(5);
         return view('dashboard.pages.request.completed', compact('completedRequests'));
     }
 

@@ -53,13 +53,24 @@
       <div class="col-md-3 text-center">
         <ul class="list-unstyled mt-3">
           <li>
-            <p>Tatari 64, 10134 Tallinn, Estonia</p>
+            <p>
+              <a href="https://maps.app.goo.gl/KEnDKAAnxG3xumoT6" target="_blank" class="text-white">
+                {{ $settings->address }}
+              </a>
+            </p>
           </li>
           <li>
-            <p>+372 5666 9328</p>
+            <p>
+              <a href="tel:{{ $settings->phone }}" class="text-white">
+                {{ $settings->phone }}
+              </a>
+            </p>
           </li>
           <li>
-            <p class="mb-0">info@tkds.ee</p>
+            <p class="mb-0">
+              <a href="mailto:{{ $settings->email }}" class="text-white">
+                {{ $settings->email }}</a>
+            </p>
           </li>
         </ul>
       </div>

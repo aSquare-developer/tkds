@@ -8,6 +8,7 @@ use App\Mail\RegisterForLessonsEmail;
 use App\Mail\RegisterForTrialTrainingEmail;
 use App\Models\Dancestyle;
 use App\Models\Dashboard\Requests;
+use App\Models\Dashboard\Settings;
 use App\Models\Dashboard\Timetable;
 use App\Models\Header;
 use App\Models\RegisterNewStudent;
@@ -24,7 +25,8 @@ class MainController extends Controller
       $dancestyles = Dancestyle::all();
       $header = Header::find(1);
       $teachers = Teacher::all();
-      return view('pages.index', compact('dancestyles', 'header', 'arrayOflessons', 'teachers'));
+      $settings = Settings::find(1);
+      return view('pages.index', compact('dancestyles', 'header', 'arrayOflessons', 'teachers', 'settings'));
     }
 
     public function registerForLessonsPage() {

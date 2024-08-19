@@ -6,6 +6,7 @@ use App\Mail\ContactUsMail;
 
 use Illuminate\Http\Request;
 use App\Models\ContactUs;
+use App\Models\Dashboard\Settings;
 use Illuminate\Support\Facades\Mail;
 
 use App\Rules\ReCaptcha;

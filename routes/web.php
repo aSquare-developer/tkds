@@ -12,6 +12,7 @@ use App\Http\Controllers\Dashboard\TeacherController;
 use App\Http\Controllers\Dashboard\TimetableController;
 use App\Http\Controllers\Dashboard\TrialLessonController;
 use App\Http\Controllers\Dashboard\PriceListController;
+use App\Http\Controllers\Dashboard\SettingsController;
 use App\Http\Controllers\HallBookingController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\MainController;
@@ -121,4 +122,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard/pricelist/{offer}/edit', [PriceListController::class, 'edit'])->name('dashboard.priselist.edit');
     Route::patch('/dashboard/pricelist/{offer}/update', [PriceListController::class, 'update'])->name('dashboard.priselist.update');
     Route::delete('/dashboard/pricelist/{service}', [PriceListController::class, 'destroy'])->name('dashboard.priselist.delete');
+
+    // Dashboard Settings Page Section
+    Route::get('/dashboard/settings', [SettingsController::class, 'index'])->name('dashboard.settings.index');
+    Route::post('/dashboard/settings/{settings}/update', [SettingsController::class, 'update'])->name('dashboard.settings.update');
 });

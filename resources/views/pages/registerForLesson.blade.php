@@ -6,6 +6,11 @@
 
     <div class="container">
         <h1>Uute tantsijate vastuvõtt {{ date('Y') }}/{{ date('y', strtotime('+1 year')) }}</h1>
+        <p>
+            Pange tähele, et rühmas võivad kehtida vanusepiirangud.<br />
+            Taotluse esitamisel palun veenduge, et teie vanus on sellesse gruppi sobiv.<br />
+            Palun kirjutage meie meilile
+        </p>
 
         <form action="/register-for-lessons" method="post">
             @csrf

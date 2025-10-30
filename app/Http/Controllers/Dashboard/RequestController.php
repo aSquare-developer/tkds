@@ -43,12 +43,13 @@ class RequestController extends Controller
 
     public function sendContract($id, $fileId)
     {
+        // OLD CODE HERE. NEED TO UPGRADE...
         // Get data about our request
         $request = Requests::find($id);
 
         if($fileId == 1) {
 
-            $mailDataAttachment = "https://tkds.ee/storage/Leping_TKD.pdf";
+            $mailDataAttachment = "https://tkds.ee/storage/Leping_TKDS.pdf";
 
             // Send Email for customer
             Mail::to($request->email)->send(new NewStudentNotificationEmail($mailDataAttachment));
@@ -61,7 +62,7 @@ class RequestController extends Controller
 
         } else if ($fileId == 2) {
 
-            $mailDataAttachment = "https://www.tkds.ee/storage/Leping_TT.pdf";
+            $mailDataAttachment = "https://www.tkds.ee/storage/Leping_TKDS.pdf";
 
             // Send Email for customer
             Mail::to($request->email)->send(new NewStudentNotificationEmail($mailDataAttachment));

@@ -49,7 +49,7 @@ class RequestController extends Controller
 
         if($fileId == 1) {
 
-            $mailDataAttachment = "https://tkds.ee/storage/Leping_TKDS.pdf";
+            $mailDataAttachment = "https://tkds.ee/storage/documents/Leping_TKDS.pdf";
 
             // Send Email for customer
             Mail::to($request->email)->send(new NewStudentNotificationEmail($mailDataAttachment));
@@ -62,7 +62,7 @@ class RequestController extends Controller
 
         } else if ($fileId == 2) {
 
-            $mailDataAttachment = "https://www.tkds.ee/storage/Leping_TKDS.pdf";
+            $mailDataAttachment = "https://www.tkds.ee/storage/documents/Leping_TKDS.pdf";
 
             // Send Email for customer
             Mail::to($request->email)->send(new NewStudentNotificationEmail($mailDataAttachment));

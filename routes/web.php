@@ -126,4 +126,6 @@ Route::middleware(['auth'])->group(function () {
     // Dashboard Settings Page Section
     Route::get('/dashboard/settings', [SettingsController::class, 'index'])->name('dashboard.settings.index');
     Route::post('/dashboard/settings/{settings}/update', [SettingsController::class, 'update'])->name('dashboard.settings.update');
+    Route::post('/dashboard/document', [SettingsController::class, 'handle'])->name('dashboard.document.handle');
+
 });
